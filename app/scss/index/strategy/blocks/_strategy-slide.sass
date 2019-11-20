@@ -1,0 +1,42 @@
+.strategy-slide
+  display: flex
+  border-radius: 12px
+  +shadow
+  +md
+    flex-direction: column
+  &__img
+    padding: 24px
+    background: rgba(156, 66, 245, 0.03)
+    display: flex
+    flex-direction: column
+    border-radius: 12px 0 0 12px
+    flex-shrink: 0
+    width: 44.5%
+    +md-one(width, 100%)
+    img
+      width: 100%
+      padding: 24px
+  &__number
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    width: 32px
+    height: 32px
+    border-radius: 50%
+    color: $violet
+    background: $l-violet
+    font-weight: bold
+    font-size: 16px
+    line-height: 28px
+  &__text
+    padding: 24px 24px 24px 32px
+    +md-one(padding, 24px)
+  &__title
+    font-size: 24px
+    line-height: 32px
+    color: $black
+    font-weight: 600
+    margin-bottom: 24px
+  &__description
+    font-size: 16px
+    line-height: 28px

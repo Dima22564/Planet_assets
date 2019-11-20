@@ -1,0 +1,27 @@
+// Blocks
+@import './blocks/_main-title'
+@import './blocks/_main-slider'
+
+.header
+  padding: 100px 0 144px
+  position: relative
+  +md-one(padding, 0 0 120px)
+  +md
+    overflow: hidden
+    padding: 0 0 120px
+  .container
+    position: relative
+    +md-one(position, initial)
+  &__bg-img
+    position: absolute
+    right: 137px
+    top: -130px
+    +lg-one(right, 18px)
+    +md
+      bottom: 0
+      top: initial
+      right: 100px
+      width: 100%
+    +media-b(500)
+      width: initial
+      right: -10%

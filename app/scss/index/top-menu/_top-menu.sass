@@ -1,0 +1,89 @@
+.top-menu
+  box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px 0 rgba(20, 16, 41, 0.12)
+  background: $white
+  margin-bottom: 36px
+  +md-one(padding-bottom, 24px)
+  &-wrapper
+    display: flex
+    align-items: center
+    padding: 12px
+    justify-content: space-between
+  &__nav
+    margin-left: 60px
+  &__dark-mode
+    margin-left: 48px
+  &__langs
+    margin-left: 48px
+  &__btn
+    margin-left: 12px
+    display: flex
+    align-items: center
+    .fa
+      color: $white
+      margin-right: 14px
+.dark-mode
+  display: flex
+  align-items: center
+  font-size: 16px
+  &__label
+    margin-left: 16px
+    cursor: pointer
+.nav
+  display: flex
+  &__list
+    display: flex
+    align-items: center
+  &__link
+    font-size: 16px
+  &__item
+    display: flex
+    align-items: center
+    cursor: pointer
+    &:not(:last-child)
+      margin-right: 48px
+  &__arrow
+    margin-left: 3px
+    transition: all 0.2s
+.langs
+  position: relative
+  font-size: 16px
+  line-height: 28px
+  color: $black
+  cursor: pointer
+  letter-spacing: 1px
+  border-radius: 4px
+  display: flex
+  align-items: center
+  &__btn
+    padding: 10px 12px
+    box-shadow: 0 8px 8px -4px #1410290f, 0 2px 4px -1px #1410290f, 0 0 1px 0 #1410291e
+    background: rgba(20, 16, 41, 0.02)
+    border-radius: 24px
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: all 0.3s
+  &__text
+    margin-left: 12px
+    text-transform: uppercase
+    font-size: 16px
+    line-height: 28px
+    font-weight: 600
+    color: $black
+  &__list
+    box-shadow: 0 16px 16px -4px #1410290f, 0 4px 8px -1px #1410290f, 0 0 1px 0 #1410291e;
+    background: $white
+    border-radius: 4px
+    position: absolute
+    left: 0
+    bottom: 0
+    transform: translateY(calc(100% + 4px))
+    overflow: hidden
+    display: none
+  &__item
+    padding: 6px 16px 6px 12px
+    background: $white
+    text-transform: uppercase
+    display: flex
+    align-items: center
+    justify-content: center

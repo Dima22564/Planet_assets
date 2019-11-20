@@ -1,0 +1,54 @@
+.slick-list
+  padding: 5px 0
+  margin: -5px 0
+.main-slide
+  +shadow
+  border-radius: 12px
+  background: $white
+  padding: 16px
+  margin: 0 5px
+  +md-one(margin-top, 136px)
+  &__top
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    margin-bottom: 24px
+  &__imgWrapper
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 96px
+    height: 96px
+    background: $l-violet
+    border-radius: 50%
+    &-violet
+      background: $l-violet
+      .main-slide__icon
+        color: $violet
+    &-orange
+      background: rgba(245, 92, 69, 0.03)
+      .main-slide__icon
+        color: #f55c45
+    &-pink
+      background: rgba(255, 0, 170, 0.03)
+      .main-slide__icon
+        color: #ff00aa
+  &__icon
+    color: $violet
+    font-size: 44px
+  &__title
+    margin-bottom: 16px
+    font-size: 20px
+    line-height: 28px
+    color: $black
+    font-weight: 600
+  &__btns
+    display: flex
+    align-items: center
+  &__btn
+    border: none
+    background: none
+    cursor: pointer
+    font-size: 18px
+    i
+      color: $gray 

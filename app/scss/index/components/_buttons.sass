@@ -1,0 +1,40 @@
+.btn
+  border: none
+  cursor: pointer
+  font-size: 16px
+  line-height: 24px
+  transition: all 0.2s
+  font-weight: 600
+.btn-violet
+  border-radius: 24px
+  box-shadow: 0 8px 8px -4px rgba(156, 66, 245, 0.12), 0 16px 24px 0 rgba(156, 66, 245, 0.24), 0 2px 4px -1px rgba(27, 10, 82, 0.12), 0 0 1px 0 rgba(156, 66, 245, 0.24)
+  background-image: linear-gradient(105deg, #ff00aa, #9c42f5 53%, #5d2de1)
+  color: $white
+  padding: 12px 24px
+  &:hover
+    box-shadow: 0 12px 12px -4px rgba(156, 66, 245, 0.12), 0 24px 32px 0 rgba(156, 66, 245, 0.24), 0 4px 4px -1px rgba(27, 10, 82, 0.12), 0 1px 1px 0 rgba(156, 66, 245, 0.24)
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.06)), linear-gradient(114deg, #ff00aa, #9c42f5 53%, #5d2de1 100%)
+  &:active
+    box-shadow: 0 8px 8px -4px rgba(156, 66, 245, 0.12), 0 8px 16px 0 rgba(156, 66, 245, 0.24), 0 1px 4px -1px rgba(27, 10, 82, 0.12), 0 1px 1px 0 rgba(156, 66, 245, 0.24)
+    background-image: linear-gradient(114deg, #ff00aa, #9c42f5 53%, #5d2de1 100%)
+  &.disable
+    box-shadow: 0 0 8px -4px rgba(156, 66, 245, 0.12), 0 0 24px 0 rgba(156, 66, 245, 0.24), 0 0 4px -1px rgba(27, 10, 82, 0.12), 0 0 1px 0 rgba(156, 66, 245, 0.24)
+    background-image: linear-gradient(114deg, #ff00aa, #9c42f5 53%, #5d2de1 100%)
+    color: rgba(255, 255, 255, 0.24)
+
+
+.btn-white
+  color: $violet
+  box-shadow: 0 8px 8px -4px rgba(156, 66, 245, 0.06), 0 16px 24px 0 rgba(156, 66, 245, 0.12), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px 0 rgba(156, 66, 245, 0.12)
+  background-color: $white
+  padding: 12px 24px
+  border-radius: 24px
+  &:hover
+    box-shadow: 0 12px 12px -4px rgba(156, 66, 245, 0.06), 0 24px 32px 0 rgba(156, 66, 245, 0.12), 0 4px 4px -1px rgba(20, 16, 41, 0.06), 0 1px 1px 0 rgba(156, 66, 245, 0.12)
+    color: rgba(156, 66, 245, 0.8)
+  &:active
+    box-shadow: 0 8px 8px -4px rgba(156, 66, 245, 0.06), 0 8px 16px 0 rgba(156, 66, 245, 0.12), 0 1px 4px -1px rgba(20, 16, 41, 0.06), 0 1px 1px 0 rgba(156, 66, 245, 0.12)
+    color: $violet
+  &.disabled
+    box-shadow: 0 0 8px -4px rgba(156, 66, 245, 0.06), 0 0 16px 0 rgba(156, 66, 245, 0.12), 0 0 4px -1px rgba(20, 16, 41, 0.06), 0 0 0 0 rgba(156, 66, 245, 0.12)
+    color: rgba(156, 66, 245, 0.24)

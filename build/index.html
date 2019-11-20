@@ -6,721 +6,268 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700&amp;display=swap" rel="stylesheet">
         <link href="./libs/css/vendor.min.css" rel="stylesheet">
-        <link href="./css/style.css" rel="stylesheet">
-        <title>Orion</title>
+        <link href="./css/style.min.css" rel="stylesheet">
+        <title>Planet Assets</title>
     </head>
     <body>
-        <div class="top-menu">
-            <div class="links"><a class="logo" href><img src="./img/logo.png" alt></a><a class="nav-link active" href><span class="icon-link-1 icon"></span></a><a class="nav-link" href><span class="icon-link-2 icon"></span></a><a class="nav-link" href><span class="icon-link-3 icon"></span></a><a class="nav-link" href><span class="icon-link-1 icon"></span></a><a class="nav-link" href><span class="icon-link-1 icon"></span></a></div>
-            <div class="add">+</div>
-        </div>
-        <div class="index-nav">
-            <div class="index-nav-item active js-index-nav" data-nav="pair">
-                <div class="icon"><span class="icon-mobile-1"></span></div>
-                <div class="text">Pair</div>
+        <section class="top-menu">
+            <div class="container">
+                <div class="top-menu-wrapper"><a class="top-menu__logo" href><img src="./img/logo.png" alt></a>
+                    <nav class="nav top-menu__nav">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a class="nav__link" href>Forex4you</a></li>
+                            <li class="nav__item"><a class="nav__link" href>How It Works</a></li>
+                            <li class="nav__item"><a class="nav__link" href>More</a><i class="fa fa-angle-down nav__arrow" aria-hidden="true"></i></li>
+                        </ul>
+                    </nav>
+                    <div class="dark-mode top-menu__dark-mode">
+                        <div class="toggler js-toggler-dark-mode">
+                            <div class="toggler__way"></div>
+                            <div class="toggler__circle"></div>
+                        </div><span class="dark-mode__label">Dark Mode</span>
+                    </div>
+                    <div class="langs top-menu__langs">
+                        <div class="langs__btn"><img class="langs__img" src="./img/russia.svg" alt><span class="langs__text">ru</span></div>
+                        <ul class="langs__list">
+                            <li class="langs__item"><img src="./img/russia.svg" alt><span class="langs__text">en</span></li>
+                            <li class="langs__item"><img src="./img/russia.svg" alt><span class="langs__text">en</span></li>
+                            <li class="langs__item"><img src="./img/russia.svg" alt><span class="langs__text">en</span></li>
+                            <li class="langs__item"><img src="./img/russia.svg" alt><span class="langs__text">en</span></li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-violet top-menu__btn"><i class="fa fa-telegram" aria-hidden="true"></i><span>Get in Touch</span></button>
+                </div>
             </div>
-            <div class="index-nav-item js-index-nav" data-nav="exchange">
-                <div class="icon"><span class="icon-mobile-2"></span></div>
-                <div class="text">Exchange</div>
-            </div>
-            <div class="index-nav-item js-index-nav" data-nav="chart">
-                <div class="icon"><span class="icon-mobile-3"></span></div>
-                <div class="text">Chart</div>
-            </div>
-            <div class="index-nav-item js-index-nav" data-nav="history">
-                <div class="icon"><span class="icon-mobile-4"></span></div>
-                <div class="text">History</div>
-            </div>
-            <div class="index-nav-item js-index-nav" data-nav="orderbook">
-                <div class="icon"><span class="icon-mobile-5"></span></div>
-                <div class="text">Orderbook</div>
-            </div>
-        </div>
-        <div class="index">
-            <div class="wrapper-pair js-wrapper-pair"></div>
-            <div class="sidebar-line js-sidebar-line">
-                <div class="line"></div>
-            </div>
-            <div class="sidebar-wrapper js-sidebar-wrapper">
-                <div class="sidebar-content"><a class="logo" href><img src="./img/logo.png" alt></a>
-                    <div class="links">
-                        <div class="dark-mode">
-                            <div class="night"><img src="./img/night.png" alt></div>
-                            <div class="text mode-toggler"><span>Dark Mode</span>
-                                <div class="toggler js-toggler-dark-mode">
-                                    <div class="toggler-way"></div>
-                                    <div class="toggler-circle"></div>
+        </section>
+        <header class="header">
+            <div class="container"><img class="header__bg-img" src="./img/bg-img-1.jpg" alt>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-7 col-md-7">
+                        <div class="main-title">
+                            <h1>Earn on the Trading Bot from 10% per Month Without Risks and Forex Knowledge</h1>
+                        </div>
+                        <div class="main-title__btns">
+                            <button class="btn btn-violet main-title__btn">Buy a Trading Bot</button>
+                            <button class="btn btn-white main-title__btn">Demo Mode</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 offset-xl-3 col-lg-4 offset-lg-1 col-md-5 col-sm-8 offset-sm-2 offset-md-0">
+                        <div class="main-slider js-main-slider">
+                            <div class="main-slide">
+                                <div class="main-slide__top">
+                                    <div class="main-slide__imgWrapper main-slide__imgWrapper-violet"><span class="icon-icon-2 main-slide__icon"></span></div>
+                                    <div class="main-slide__btns">
+                                        <button class="main-slide__btn js-main-prev-btn"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                                        <button class="main-slide__btn js-main-next-btn"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                                    </div>
                                 </div>
+                                <p class="main-slide__title">Total Daily Earnings </p>
+                                <p class="main-slide__text">A platform for automating the purchase of advertising</p>
+                            </div>
+                            <div class="main-slide">
+                                <div class="main-slide__top">
+                                    <div class="main-slide__imgWrapper main-slide__imgWrapper-orange"><span class="icon-icon-1 main-slide__icon"></span></div>
+                                    <div class="main-slide__btns">
+                                        <button class="main-slide__btn js-main-prev-btn"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                                        <button class="main-slide__btn js-main-next-btn"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                                <p class="main-slide__title">Number of Users</p>
+                                <p class="main-slide__text">A platform for automating the purchase of advertising</p>
+                            </div>
+                            <div class="main-slide">
+                                <div class="main-slide__top">
+                                    <div class="main-slide__imgWrapper main-slide__imgWrapper-pink"><span class="icon-icon-3 main-slide__icon"></span></div>
+                                    <div class="main-slide__btns">
+                                        <button class="main-slide__btn js-main-prev-btn"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                                        <button class="main-slide__btn js-main-next-btn"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                                <p class="main-slide__title">Total Daily Profit</p>
+                                <p class="main-slide__text">A platform for automating the purchase of advertising</p>
                             </div>
                         </div>
-                        <nav><a class="nav-link active" href><span class="icon-link-1 icon"></span><span class="text">Home</span></a><a class="nav-link" href><span class="icon-link-2 icon"></span><span class="text">Dashboard</span></a><a class="nav-link" href><span class="icon-link-3 icon"></span><span class="text">History</span></a></nav>
-                        <div class="aside-coins">
-                            <div class="coin"><img src="./img/bit-aside.svg" alt><span class="text">Bitcoin</span></div>
-                            <div class="coin"><img src="./img/eth-aside.svg" alt><span class="text">Ethereum</span></div>
-                            <div class="coin"><img src="./img/dash-small.png" alt><span class="text">Dash</span></div>
-                        </div>
-                        <button class="add-wallet"><img src="./img/close.png" alt><span>Add Wallet</span></button>
+                        <div class="slider-dots"></div>
                     </div>
                 </div>
             </div>
-            <div class="my-container">
-                <div class="my-row">
-                    <div class="left-panel js-panel active">
-                        <div class="common-info js-panel-item js-pair">
-                            <div class="top">
-                                <div class="star"><i class="fa fa-star-o" aria-hidden="true"></i><span>Pair</span></div>
-                                <div class="pair-select">
-                                    <div class="link js-pair-link"><span>ETH / BTC</span><span class="icon-arrow-d"></span></div>
-                                    <div class="pair-drop js-pair-drop">
-                                        <div class="titles"><span>BTC</span><span>USD</span><span class="active">ETH</span><span>NEO</span><span>EOS</span></div>
-                                        <div class="search">
-                                            <div class="input">
-                                                <input type="text" placeholder="Search pair"><i class="fa fa-search" aria-hidden="true"></i>
-                                            </div>
-                                            <div class="favourite"><i class="fa fa-star-o" aria-hidden="true"></i><span>Favourites</span></div>
-                                        </div>
-                                        <div class="pair-table">
-                                            <div class="titles-p">
-                                                <div class="title"><span>Pair</span><img src="./img/arrow-down.svg" alt></div>
-                                                <div class="title short"><span>Last Pr.</span><img src="./img/arrow-down.svg" alt></div>
-                                                <div class="title short"><span>24h Vol</span><img src="./img/arrow-down.svg" alt></div>
-                                                <div class="title chg"><span>24h Change</span><img src="./img/arrow-down.svg" alt></div>
-                                            </div>
-                                            <div class="lines">
-                                                <div class="part">
-                                                    <div class="line">
-                                                        <div class="cell"><img class="img" src="./img/btc-color.png" alt>
-                                                            <div class="text"><span class="emp">BTC</span><span class="small">Bitcoin</span></div>
-                                                        </div>
-                                                        <div class="cell short"><span class="title-m">Last Pr.</span>
-                                                            <div class="text"><span class="emp">0.0174</span><span class="small">$174.41</span></div>
-                                                        </div>
-                                                        <div class="cell short"><span class="title-m">24h Change</span>
-                                                            <div class="text"><span class="emp">0.001500</span><span class="small">$53.41</span></div>
-                                                        </div>
-                                                        <div class="cell chg"><img src="./img/growth.png" alt>
-                                                            <p><span class="emp">+4,42</span> <span>%</span></p>
-                                                            <div class="star js-star"><i class="fa fa-star-o" aria-hidden="true"></i></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="line">
-                                                        <div class="cell"><img class="img" src="./img/btc-color.png" alt>
-                                                            <div class="text"><span class="emp">BTC</span><span class="small">Bitcoin</span></div>
-                                                        </div>
-                                                        <div class="cell short"><span class="title-m">Last Pr.</span>
-                                                            <div class="text"><span class="emp">0.0174</span><span class="small">$174.41</span></div>
-                                                        </div>
-                                                        <div class="cell short"><span class="title-m">24h Change</span>
-                                                            <div class="text"><span class="emp">0.001500</span><span class="small">$53.41</span></div>
-                                                        </div>
-                                                        <div class="cell chg"><img src="./img/growth.png" alt>
-                                                            <p><span class="emp">+4,42</span> <span>%</span></p>
-                                                            <div class="star js-star"><i class="fa fa-star-o" aria-hidden="true"></i></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="line">
-                                                        <div class="cell"><img class="img" src="./img/btc-color.png" alt>
-                                                            <div class="text"><span class="emp">BTC</span><span class="small">Bitcoin</span></div>
-                                                        </div>
-                                                        <div class="cell short"><span class="title-m">Last Pr.</span>
-                                                            <div class="text"><span class="emp">0.0174</span><span class="small">$174.41</span></div>
-                                                        </div>
-                                                        <div class="cell short"><span class="title-m">24h Change</span>
-                                                            <div class="text"><span class="emp">0.001500</span><span class="small">$53.41</span></div>
-                                                        </div>
-                                                        <div class="cell chg"><img src="./img/growth.png" alt>
-                                                            <p><span class="emp">+4,42</span> <span>%</span></p>
-                                                            <div class="star js-star"><i class="fa fa-star-o" aria-hidden="true"></i></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="line">
-                                                        <div class="cell"><img class="img" src="./img/btc-color.png" alt>
-                                                            <div class="text"><span class="emp">BTC</span><span class="small">Bitcoin</span></div>
-                                                        </div>
-                                                        <div class="cell short"><span class="title-m">Last Pr.</span>
-                                                            <div class="text"><span class="emp">0.0174</span><span class="small">$174.41</span></div>
-                                                        </div>
-                                                        <div class="cell short"><span class="title-m">24h Change</span>
-                                                            <div class="text"><span class="emp">0.001500</span><span class="small">$53.41</span></div>
-                                                        </div>
-                                                        <div class="cell chg"><img src="./img/growth.png" alt>
-                                                            <p><span class="emp">+4,42</span> <span>%</span></p>
-                                                            <div class="star js-star"><i class="fa fa-star-o" aria-hidden="true"></i></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="line">
-                                                        <div class="cell"><img class="img" src="./img/btc-color.png" alt>
-                                                            <div class="text"><span class="emp">BTC</span><span class="small">Bitcoin</span></div>
-                                                        </div>
-                                                        <div class="cell short"><span class="title-m">Last Pr.</span>
-                                                            <div class="text"><span class="emp">0.0174</span><span class="small">$174.41</span></div>
-                                                        </div>
-                                                        <div class="cell short"><span class="title-m">24h Change</span>
-                                                            <div class="text"><span class="emp">0.001500</span><span class="small">$53.41</span></div>
-                                                        </div>
-                                                        <div class="cell chg"><img src="./img/growth.png" alt>
-                                                            <p><span class="emp">+4,42</span> <span>%</span></p>
-                                                            <div class="star js-star"><i class="fa fa-star-o" aria-hidden="true"></i></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="line">
-                                                        <div class="cell"><img class="img" src="./img/btc-color.png" alt>
-                                                            <div class="text"><span class="emp">BTC</span><span class="small">Bitcoin</span></div>
-                                                        </div>
-                                                        <div class="cell short"><span class="title-m">Last Pr.</span>
-                                                            <div class="text"><span class="emp">0.0174</span><span class="small">$174.41</span></div>
-                                                        </div>
-                                                        <div class="cell short"><span class="title-m">24h Change</span>
-                                                            <div class="text"><span class="emp">0.001500</span><span class="small">$53.41</span></div>
-                                                        </div>
-                                                        <div class="cell chg"><img src="./img/growth.png" alt>
-                                                            <p><span class="emp">+4,42</span> <span>%</span></p>
-                                                            <div class="star js-star"><i class="fa fa-star-o" aria-hidden="true"></i></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="line">
-                                                        <div class="cell"><img class="img" src="./img/btc-color.png" alt>
-                                                            <div class="text"><span class="emp">BTC</span><span class="small">Bitcoin</span></div>
-                                                        </div>
-                                                        <div class="cell short"><span class="title-m">Last Pr.</span>
-                                                            <div class="text"><span class="emp">0.0174</span><span class="small">$174.41</span></div>
-                                                        </div>
-                                                        <div class="cell short"><span class="title-m">24h Change</span>
-                                                            <div class="text"><span class="emp">0.001500</span><span class="small">$53.41</span></div>
-                                                        </div>
-                                                        <div class="cell chg"><img src="./img/growth.png" alt>
-                                                            <p><span class="emp">+4,42</span> <span>%</span></p>
-                                                            <div class="star js-star"><i class="fa fa-star-o" aria-hidden="true"></i></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="line">
-                                                        <div class="cell"><img class="img" src="./img/btc-color.png" alt>
-                                                            <div class="text"><span class="emp">BTC</span><span class="small">Bitcoin</span></div>
-                                                        </div>
-                                                        <div class="cell short"><span class="title-m">Last Pr.</span>
-                                                            <div class="text"><span class="emp">0.0174</span><span class="small">$174.41</span></div>
-                                                        </div>
-                                                        <div class="cell short"><span class="title-m">24h Change</span>
-                                                            <div class="text"><span class="emp">0.001500</span><span class="small">$53.41</span></div>
-                                                        </div>
-                                                        <div class="cell chg"><img src="./img/growth.png" alt>
-                                                            <p><span class="emp">+4,42</span> <span>%</span></p>
-                                                            <div class="star js-star"><i class="fa fa-star-o" aria-hidden="true"></i></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="line">
-                                                        <div class="cell"><img class="img" src="./img/btc-color.png" alt>
-                                                            <div class="text"><span class="emp">BTC</span><span class="small">Bitcoin</span></div>
-                                                        </div>
-                                                        <div class="cell short"><span class="title-m">Last Pr.</span>
-                                                            <div class="text"><span class="emp">0.0174</span><span class="small">$174.41</span></div>
-                                                        </div>
-                                                        <div class="cell short"><span class="title-m">24h Change</span>
-                                                            <div class="text"><span class="emp">0.001500</span><span class="small">$53.41</span></div>
-                                                        </div>
-                                                        <div class="cell chg"><img src="./img/growth.png" alt>
-                                                            <p><span class="emp">+4,42</span> <span>%</span></p>
-                                                            <div class="star js-star"><i class="fa fa-star-o" aria-hidden="true"></i></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="line">
-                                                        <div class="cell"><img class="img" src="./img/btc-color.png" alt>
-                                                            <div class="text"><span class="emp">BTC</span><span class="small">Bitcoin</span></div>
-                                                        </div>
-                                                        <div class="cell short"><span class="title-m">Last Pr.</span>
-                                                            <div class="text"><span class="emp">0.0174</span><span class="small">$174.41</span></div>
-                                                        </div>
-                                                        <div class="cell short"><span class="title-m">24h Change</span>
-                                                            <div class="text"><span class="emp">0.001500</span><span class="small">$53.41</span></div>
-                                                        </div>
-                                                        <div class="cell chg"><img src="./img/growth.png" alt>
-                                                            <p><span class="emp">+4,42</span> <span>%</span></p>
-                                                            <div class="star js-star"><i class="fa fa-star-o" aria-hidden="true"></i></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="line">
-                                                        <div class="cell"><img class="img" src="./img/btc-color.png" alt>
-                                                            <div class="text"><span class="emp">BTC</span><span class="small">Bitcoin</span></div>
-                                                        </div>
-                                                        <div class="cell short"><span class="title-m">Last Pr.</span>
-                                                            <div class="text"><span class="emp">0.0174</span><span class="small">$174.41</span></div>
-                                                        </div>
-                                                        <div class="cell short"><span class="title-m">24h Change</span>
-                                                            <div class="text"><span class="emp">0.001500</span><span class="small">$53.41</span></div>
-                                                        </div>
-                                                        <div class="cell chg"><img src="./img/growth.png" alt>
-                                                            <p><span class="emp">+4,42</span> <span>%</span></p>
-                                                            <div class="star js-star"><i class="fa fa-star-o" aria-hidden="true"></i></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="line">
-                                                        <div class="cell"><img class="img" src="./img/btc-color.png" alt>
-                                                            <div class="text"><span class="emp">BTC</span><span class="small">Bitcoin</span></div>
-                                                        </div>
-                                                        <div class="cell short"><span class="title-m">Last Pr.</span>
-                                                            <div class="text"><span class="emp">0.0174</span><span class="small">$174.41</span></div>
-                                                        </div>
-                                                        <div class="cell short"><span class="title-m">24h Change</span>
-                                                            <div class="text"><span class="emp">0.001500</span><span class="small">$53.41</span></div>
-                                                        </div>
-                                                        <div class="cell chg"><img src="./img/growth.png" alt>
-                                                            <p><span class="emp">+4,42</span> <span>%</span></p>
-                                                            <div class="star js-star"><i class="fa fa-star-o" aria-hidden="true"></i></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="line">
-                                                        <div class="cell"><img class="img" src="./img/btc-color.png" alt>
-                                                            <div class="text"><span class="emp">BTC</span><span class="small">Bitcoin</span></div>
-                                                        </div>
-                                                        <div class="cell short"><span class="title-m">Last Pr.</span>
-                                                            <div class="text"><span class="emp">0.0174</span><span class="small">$174.41</span></div>
-                                                        </div>
-                                                        <div class="cell short"><span class="title-m">24h Change</span>
-                                                            <div class="text"><span class="emp">0.001500</span><span class="small">$53.41</span></div>
-                                                        </div>
-                                                        <div class="cell chg"><img src="./img/growth.png" alt>
-                                                            <p><span class="emp">+4,42</span> <span>%</span></p>
-                                                            <div class="star js-star"><i class="fa ffa-star-o" aria-hidden="true"></i></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+        </header>
+        <section class="calculator">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-xl-7 col-lg-7 order-md-2 order-sm-2 order-2">
+                        <div class="profit">
+                            <div class="profit__top">
+                                <div class="profit__type">
+                                    <button class="profit__btn profit__btn_active">Light Profit</button>
+                                    <button class="profit__btn">Turbo Profit</button>
+                                </div><span class="profit__percent">from 6-12%</span>
+                            </div>
+                            <div class="range-slider profit__range-slider">
+                                <div class="range-slider__top"><span class="range-slider__title">Deposit Amount</span><span class="range-slider__value">$72,000</span></div>
+                                <input class="range-slider__input" type="text">
+                            </div>
+                            <div class="range-slider profit__range-slider">
+                                <div class="range-slider__top"><span class="range-slider__title">Placement Period</span><span class="range-slider__value">3 months</span></div>
+                                <input class="range-slider__input" type="text">
+                            </div>
+                            <div class="profit__functions"><span class="profit__name">Interest Accrual</span>
+                                <div class="profit__func-btns">
+                                    <button class="profit__btn profit__btn_small profit__btn_active">Add to Deposit</button>
+                                    <button class="profit__btn profit__btn_small">Withdraw Monthly</button>
                                 </div>
                             </div>
-                            <div class="price">
-                                <div class="last-price"><span class="title">Last price</span>
-                                    <div class="value"><span class="emp">0.0174</span><span class="dollars">$174.41</span></div>
+                            <div class="profit__bottom">
+                                <div class="revenue profit__revenue">
+                                    <p class="revenue__price"><span class="revenue__percent">%</span> 13,850</p>
+                                    <div class="revenue__title"> <span>avarage</span><span>return</span></div>
                                 </div>
-                                <div class="change"><span class="title">24h change</span>
-                                    <div class="value"><img src="./img/growth.png" alt>
-                                        <p class="emp">+4.42 <span>%</span></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="table">
-                                <div class="line"><span class="title">24h High</span>
-                                    <p class="value averta"><span>0.015200</span> <span class="small">$180.41</span></p>
-                                </div>
-                                <div class="line"><span class="title">24h Low</span>
-                                    <p class="value averta"><span>0.015200</span> <span class="small">$180.41</span></p>
-                                </div>
-                                <div class="line"><span class="title">24h Vol</span>
-                                    <p class="value averta"><span>0.015200</span> <span class="small">$180.41</span></p>
-                                </div>
+                                <button class="btn btn-violet">Start Earning</button>
                             </div>
                         </div>
-                        <div class="buy-sell js-panel-item js-exchange">
-                            <div class="top">
-                                <button class="js-buy-sell active" data-content="buy-content">Buy</button>
-                                <button class="js-buy-sell sell-btn" data-content="sell-content">Sell</button>
-                            </div>
-                            <div class="main-content">
-                                <div class="buy-content js-buy-sell-content">
-                                    <div class="big-toggler">
-                                        <button class="active">Market</button>
-                                        <button>Limit order</button>
-                                    </div>
-                                    <div class="amount"><span class="placeholder">Amount</span>
-                                        <input type="text"><span class="currency">ETH</span>
-                                        <div class="available"><span>Available</span><span>0.10099921 BTC</span></div>
-                                    </div>
-                                    <div class="btns">
-                                        <button>25%</button>
-                                        <button>50%</button>
-                                        <button>75%</button>
-                                        <button>100%</button>
-                                    </div>
-                                    <div class="amount total"><span class="placeholder">Total</span>
-                                        <input type="text" readonly="true"><span class="currency">BTC</span>
-                                    </div>
-                                    <div class="buy-btn">
-                                        <button class="buy">Buy ETH</button>
-                                    </div>
+                    </div>
+                    <div class="col-xl-4 offset-xl-1 col-lg-5 col-md-8 offset-lg-0">
+                        <div class="title calculator__title">
+                            <p class="title__section-name">calculator</p>
+                            <h2>Calculate the Profitability of the Bot</h2>
+                            <p class="title__description">Eliminate all indirect links between advertisers and publishers by applying smart contracts for all types of tracking.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-xl-5 col-lg-5 col-md-7">
+                        <div class="title product__title">
+                            <p class="title__section-name">our product</p>
+                            <h2>Planet Assets Trading Bot</h2>
+                            <p class="title__description">This is a program created by professional traders and programmers, combining all the most modern strategies and techniques of market analysis. The programmed algorithm makes transactions on the exchange in automatic mode 24/5 at the specified</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 offset-xl-1 col-lg-7 offset-lg-0">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                <div class="product-item">
+                                    <div class="product-item__wrapper"><span class="product-item__icon icon-icon-4"></span></div><span class="product-item__text">Free Update</span>
                                 </div>
-                                <div class="sell-content js-buy-sell-content">
-                                    <div class="big-toggler">
-                                        <button class="active">Market</button>
-                                        <button>Limit order</button>
-                                    </div>
-                                    <div class="amount"><span class="placeholder">Amount</span>
-                                        <input type="text"><span class="currency">ETH</span>
-                                        <div class="available"><span>Available</span><span>0.10099921 BTC</span></div>
-                                    </div>
-                                    <div class="btns">
-                                        <button>25%</button>
-                                        <button>50%</button>
-                                        <button>75%</button>
-                                        <button>100%</button>
-                                    </div>
-                                    <div class="amount total"><span class="placeholder">Total</span>
-                                        <input type="text" readonly="true"><span class="currency">BTC</span>
-                                    </div>
-                                    <div class="buy-btn">
-                                        <button class="buy">Buy ETH</button>
-                                    </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                <div class="product-item">
+                                    <div class="product-item__wrapper"><span class="product-item__icon icon-icon-5"></span></div><span class="product-item__text">Support 24/7</span>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                <div class="product-item">
+                                    <div class="product-item__wrapper"><span class="product-item__icon icon-icon-6"></span></div><span class="product-item__text">Telegram Assistant Bot</span>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                <div class="product-item">
+                                    <div class="product-item__wrapper"><span class="product-item__icon icon-icon-7"></span></div><span class="product-item__text">70% Annual Guarantee</span>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                <div class="product-item">
+                                    <div class="product-item__wrapper"><span class="product-item__icon icon-icon-8"></span></div><span class="product-item__text">2 Types of Settings</span>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                <div class="product-item">
+                                    <div class="product-item__wrapper"><span class="product-item__icon icon-icon-9"></span></div><span class="product-item__text">2 Trailing Stop</span>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                <div class="product-item">
+                                    <div class="product-item__wrapper"><span class="product-item__icon icon-icon-10"></span></div><span class="product-item__text">Trend Protect</span>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                <div class="product-item">
+                                    <div class="product-item__wrapper"><span class="product-item__icon icon-icon-11"></span></div><span class="product-item__text">Strategy Tester</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="center-panel js-panel">
-                        <div class="image js-chart js-panel-item"><img src="./img/graph.jpg" alt></div>
-                        <div class="table js-history js-panel-item">
-                            <div class="top">
-                                <div class="big-toggler"><span class="active">Orders</span><span>History</span></div>
-                                <div class="date">
-                                    <div class="date-1">
-                                        <input class="datepicker-here pick" type="text"><i class="fa fa-calendar-o" aria-hidden="true"></i>
-                                    </div><span class="hr"></span>
-                                    <div class="date-1">
-                                        <input class="datepicker-here pick" type="text"><i class="fa fa-calendar-o" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                                <div class="currency-all">
-                                    <div class="currency">
-                                        <select class="currency-select-1" name>
-                                            <option value="">ETH</option>
-                                            <option value="">ETH</option>
-                                        </select><span class="sep">/</span>
-                                        <select class="currency-select-1" name>
-                                            <option value="">BTC</option>
-                                            <option value="">ETH</option>
-                                        </select>
-                                    </div>
-                                    <div class="all">
-                                        <select class="currency-select-1" name>
-                                            <option value="">All</option>
-                                            <option value="">All</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="table-content">
-                                <div class="titles">
-                                    <div class="title short"><span>Type</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                    <div class="title"><span>Pair</span><i class="fa fa-angle-down" aria-hidden="true"> </i></div>
-                                    <div class="title time"><span>Time</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                    <div class="title"><span>Amount</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                    <div class="title"><span>Price</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                    <div class="title status"><span>Status</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                    <div class="title"><span>Total</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                </div>
-                                <div class="lines">
-                                    <div class="line">
-                                        <div class="line-big">
-                                            <div class="line-big-main js-line-big-main"><span class="cell short emp">Sell</span><span class="cell">ETH / BTC</span><span class="cell time"><span>09.09.2019</span> <span> 12:42:4</span></span><span class="cell">0,004422124</span><span class="cell">0,000042142</span><span class="cell filled status">Filled</span><span class="cell">1,4422124</span></div>
-                                            <div class="subtable">
-                                                <div class="subline">
-                                                    <div class="subtitles">
-                                                        <div class="subtitle"><span>Exchange</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                                        <div class="subtitle right"><span>ID</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                                        <div class="subtitle right"><span>Amount</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                                        <div class="subtitle right"><span>Price</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                                        <div class="subtitle right"><span>Status</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                                    </div>
-                                                    <div class="subcontent">
-                                                        <div class="subline-d"><span>BINANCE</span><span class="right">241</span><span class="right">24214,41</span><span class="right">0,0000421421</span><span class="right filled">Filled</span></div>
-                                                        <div class="subline-d"><span>BINANCE</span><span class="right">241</span><span class="right">24214,41</span><span class="right">0,0000421421</span><span class="right open">Filled</span></div>
-                                                        <div class="subline-d"><span>BINANCE</span><span class="right">241</span><span class="right">24214,41</span><span class="right">0,0000421421</span><span class="right cancel">Filled</span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="line-small">
-                                            <div class="cell cell-top"><span class="data">Sell</span><span class="data-eth">ETH / BTC</span><span class="filled status">Filled</span></div>
-                                            <div class="cell"><span class="sub-title">Amount</span><span class="data-text">0.004422124</span><span class="data-text date">09.09.2019</span></div>
-                                            <div class="cell"><span class="sub-title">Price</span><span class="data-text">0.004422124</span><span class="data-text date">12:42:09</span></div>
-                                            <div class="cell"><span class="sub-title">Total</span><span class="data-text">0.004422124</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="line-big">
-                                            <div class="line-big-main js-line-big-main"><span class="cell short emp">Sell</span><span class="cell">ETH / BTC</span><span class="cell time"><span>09.09.2019</span> <span> 12:42:4</span></span><span class="cell">0,004422124</span><span class="cell">0,000042142</span><span class="cell filled status">Filled</span><span class="cell">1,4422124</span></div>
-                                            <div class="subtable">
-                                                <div class="subline">
-                                                    <div class="subtitles">
-                                                        <div class="subtitle"><span>Exchange</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                                        <div class="subtitle right"><span>ID</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                                        <div class="subtitle right"><span>Amount</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                                        <div class="subtitle right"><span>Price</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                                        <div class="subtitle right"><span>Status</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                                    </div>
-                                                    <div class="subcontent">
-                                                        <div class="subline-d"><span>BINANCE</span><span class="right">241</span><span class="right">24214,41</span><span class="right">0,0000421421</span><span class="right filled">Filled</span></div>
-                                                        <div class="subline-d"><span>BINANCE</span><span class="right">241</span><span class="right">24214,41</span><span class="right">0,0000421421</span><span class="right open">Filled</span></div>
-                                                        <div class="subline-d"><span>BINANCE</span><span class="right">241</span><span class="right">24214,41</span><span class="right">0,0000421421</span><span class="right cancel">Filled</span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="line-small">
-                                            <div class="cell cell-top"><span class="data">Sell</span><span class="data-eth">ETH / BTC</span><span class="filled status">Filled</span></div>
-                                            <div class="cell"><span class="sub-title">Amount</span><span class="data-text">0.004422124</span><span class="data-text date">09.09.2019</span></div>
-                                            <div class="cell"><span class="sub-title">Price</span><span class="data-text">0.004422124</span><span class="data-text date">12:42:09</span></div>
-                                            <div class="cell"><span class="sub-title">Total</span><span class="data-text">0.004422124</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="line-big">
-                                            <div class="line-big-main js-line-big-main"><span class="cell short emp">Sell</span><span class="cell">ETH / BTC</span><span class="cell time"><span>09.09.2019</span> <span> 12:42:4</span></span><span class="cell">0,004422124</span><span class="cell">0,000042142</span><span class="cell filled status">Filled</span><span class="cell">1,4422124</span></div>
-                                            <div class="subtable">
-                                                <div class="subline">
-                                                    <div class="subtitles">
-                                                        <div class="subtitle"><span>Exchange</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                                        <div class="subtitle right"><span>ID</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                                        <div class="subtitle right"><span>Amount</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                                        <div class="subtitle right"><span>Price</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                                        <div class="subtitle right"><span>Status</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                                    </div>
-                                                    <div class="subcontent">
-                                                        <div class="subline-d"><span>BINANCE</span><span class="right">241</span><span class="right">24214,41</span><span class="right">0,0000421421</span><span class="right filled">Filled</span></div>
-                                                        <div class="subline-d"><span>BINANCE</span><span class="right">241</span><span class="right">24214,41</span><span class="right">0,0000421421</span><span class="right open">Filled</span></div>
-                                                        <div class="subline-d"><span>BINANCE</span><span class="right">241</span><span class="right">24214,41</span><span class="right">0,0000421421</span><span class="right cancel">Filled</span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="line-small">
-                                            <div class="cell cell-top"><span class="data">Sell</span><span class="data-eth">ETH / BTC</span><span class="filled status">Filled</span></div>
-                                            <div class="cell"><span class="sub-title">Amount</span><span class="data-text">0.004422124</span><span class="data-text date">09.09.2019</span></div>
-                                            <div class="cell"><span class="sub-title">Price</span><span class="data-text">0.004422124</span><span class="data-text date">12:42:09</span></div>
-                                            <div class="cell"><span class="sub-title">Total</span><span class="data-text">0.004422124</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="line-big">
-                                            <div class="line-big-main js-line-big-main"><span class="cell short emp">Sell</span><span class="cell">ETH / BTC</span><span class="cell time"><span>09.09.2019</span> <span> 12:42:4</span></span><span class="cell">0,004422124</span><span class="cell">0,000042142</span><span class="cell filled status">Filled</span><span class="cell">1,4422124</span></div>
-                                            <div class="subtable">
-                                                <div class="subline">
-                                                    <div class="subtitles">
-                                                        <div class="subtitle"><span>Exchange</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                                        <div class="subtitle right"><span>ID</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                                        <div class="subtitle right"><span>Amount</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                                        <div class="subtitle right"><span>Price</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                                        <div class="subtitle right"><span>Status</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                                    </div>
-                                                    <div class="subcontent">
-                                                        <div class="subline-d"><span>BINANCE</span><span class="right">241</span><span class="right">24214,41</span><span class="right">0,0000421421</span><span class="right filled">Filled</span></div>
-                                                        <div class="subline-d"><span>BINANCE</span><span class="right">241</span><span class="right">24214,41</span><span class="right">0,0000421421</span><span class="right open">Filled</span></div>
-                                                        <div class="subline-d"><span>BINANCE</span><span class="right">241</span><span class="right">24214,41</span><span class="right">0,0000421421</span><span class="right cancel">Filled</span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="line-small">
-                                            <div class="cell cell-top"><span class="data">Sell</span><span class="data-eth">ETH / BTC</span><span class="filled status">Filled</span></div>
-                                            <div class="cell"><span class="sub-title">Amount</span><span class="data-text">0.004422124</span><span class="data-text date">09.09.2019</span></div>
-                                            <div class="cell"><span class="sub-title">Price</span><span class="data-text">0.004422124</span><span class="data-text date">12:42:09</span></div>
-                                            <div class="cell"><span class="sub-title">Total</span><span class="data-text">0.004422124</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="line-big">
-                                            <div class="line-big-main js-line-big-main"><span class="cell short emp">Sell</span><span class="cell">ETH / BTC</span><span class="cell time"><span>09.09.2019</span> <span> 12:42:4</span></span><span class="cell">0,004422124</span><span class="cell">0,000042142</span><span class="cell filled status">Filled</span><span class="cell">1,4422124</span></div>
-                                            <div class="subtable">
-                                                <div class="subline">
-                                                    <div class="subtitles">
-                                                        <div class="subtitle"><span>Exchange</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                                        <div class="subtitle right"><span>ID</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                                        <div class="subtitle right"><span>Amount</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                                        <div class="subtitle right"><span>Price</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                                        <div class="subtitle right"><span>Status</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                                                    </div>
-                                                    <div class="subcontent">
-                                                        <div class="subline-d"><span>BINANCE</span><span class="right">241</span><span class="right">24214,41</span><span class="right">0,0000421421</span><span class="right filled">Filled</span></div>
-                                                        <div class="subline-d"><span>BINANCE</span><span class="right">241</span><span class="right">24214,41</span><span class="right">0,0000421421</span><span class="right open">Filled</span></div>
-                                                        <div class="subline-d"><span>BINANCE</span><span class="right">241</span><span class="right">24214,41</span><span class="right">0,0000421421</span><span class="right cancel">Filled</span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="line-small">
-                                            <div class="cell cell-top"><span class="data">Sell</span><span class="data-eth">ETH / BTC</span><span class="filled status">Filled</span></div>
-                                            <div class="cell"><span class="sub-title">Amount</span><span class="data-text">0.004422124</span><span class="data-text date">09.09.2019</span></div>
-                                            <div class="cell"><span class="sub-title">Price</span><span class="data-text">0.004422124</span><span class="data-text date">12:42:09</span></div>
-                                            <div class="cell"><span class="sub-title">Total</span><span class="data-text">0.004422124</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                </div>
+            </div>
+        </section>
+        <section class="feedback">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-xl-6 col-lg-6 col-md-12 order-md-2 order-sm-2 order-2">
+                        <div class="feedback__video-items js-feedback__video-items">
+                            <div class="video-item feedback__video-item"><img class="video-item__img" src="./img/video.jpg" alt><img class="video-item__play" src="./img/play.svg" alt></div>
+                            <div class="video-item feedback__video-item"><img class="video-item__img" src="./img/video.jpg" alt><img class="video-item__play" src="./img/play.svg" alt></div>
+                            <div class="video-item feedback__video-item"><img class="video-item__img" src="./img/video.jpg" alt><img class="video-item__play" src="./img/play.svg" alt></div>
+                            <div class="video-item feedback__video-item"><img class="video-item__img" src="./img/video.jpg" alt><img class="video-item__play" src="./img/play.svg" alt></div>
+                            <div class="video-item feedback__video-item"><img class="video-item__img" src="./img/video.jpg" alt><img class="video-item__play" src="./img/play.svg" alt></div>
+                            <div class="video-item feedback__video-item"><img class="video-item__img" src="./img/video.jpg" alt><img class="video-item__play" src="./img/play.svg" alt></div>
+                            <div class="video-item feedback__video-item"><img class="video-item__img" src="./img/video.jpg" alt><img class="video-item__play" src="./img/play.svg" alt></div>
+                            <div class="video-item feedback__video-item"><img class="video-item__img" src="./img/video.jpg" alt><img class="video-item__play" src="./img/play.svg" alt></div>
                         </div>
                     </div>
-                    <div class="right-panel js-panel">
-                        <div class="js-panel-item js-orderbook">
-                            <div class="order-book">
-                                <p class="heading">Order Book</p>
-                                <div class="titles"><span class="title">Price</span><span class="title">Amount</span><span class="title">Total</span><span class="title exch">Exch</span></div>
-                                <div class="orders">
-                                    <div class="order"><span class="progress-light l-green" style="width:41%;"></span><span class="progress-light d-green" style="width:5%;"></span><span class="cell emp">0,0174</span><span class="cell green">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green" style="width:20%;"></span><span class="progress-light d-green" style="width:2%;"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green" style="width:15%;"></span><span class="progress-light d-green" style="width:10%;"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green" style="width:85%;"></span><span class="progress-light d-green" style="width:6%;"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green" style="width:90%;"></span><span class="progress-light d-green" style="width:1%;"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green" style="width:15%;"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green" style="width:18%;"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green" style="width:7%;"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green" style="width:16.5%;"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green" style="width:3.5%;"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green" style="width:9%;"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-green"></span><span class="progress-light d-green"></span><span class="cell emp">0,0174</span><span class="cell red">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                    <div class="col-xl-4 offset-xl-2 col-lg-5 offset-lg-1 col-md-6">
+                        <div class="title feedback__title">
+                            <p class="title__section-name">feedback</p>
+                            <h2>Reviews</h2>
+                        </div>
+                        <div class="flawless feedback__flawless">
+                            <div class="flawless__top"><img class="flawless__img" src="./img/avatar.jpg" alt>
+                                <div class="flawless__text"><span class="flawless__name">Jason Bailey</span><span class="flawless__place">Los Angeles, CA</span></div>
+                            </div>
+                            <div class="flawless__title-star"><span class="flawless__title">Flawless</span>
+                                <div class="flawless__stars"><i class="fa fa-star flawless__star" aria-hidden="true"></i><i class="fa fa-star flawless__star" aria-hidden="true"></i><i class="fa fa-star flawless__star" aria-hidden="true"></i><i class="fa fa-star-o flawless__star" aria-hidden="true"></i><i class="fa fa-star-o flawless__star" aria-hidden="true"></i></div>
+                            </div>
+                            <div class="flawless__line"><span class="flawless__subtitle">Deposit amount</span><span class="flawless__value"><span>$</span> 3,000</span></div>
+                            <div class="flawless__line"><span class="flawless__subtitle">Aug-Sep 2019 Earnings</span><span class="flawless__value"> 42 <span>%</span></span></div>
+                            <div class="revenue feedback__revenue">
+                                <p class="revenue__price"><span class="revenue__percent">$</span> 13,850</p>
+                                <div class="revenue__title"> <span>avarage</span><span>return</span></div>
+                            </div>
+                            <button class="btn btn-violet flawless__btn">Buy a Trading Bot</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="strategy">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4">
+                        <div class="title strategy__title">
+                            <p class="title__section-name">Trading strategies</p>
+                            <h2>FX Assets</h2>
+                            <p class="title__description">Three independent strategies! Each of them is independent, there are moments that unite them, for example, take profit size, but the entry points to the market for these strategies are different.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 offset-xl-1 col-lg-8">
+                        <div class="strategy-slider js-strategy-slider">
+                            <div class="strategy-wrapper">
+                                <div class="strategy-slide">
+                                    <div class="strategy-slide__img"><span class="strategy-slide__number">1</span><img src="./img/strategy-1.png" alt></div>
+                                    <div class="strategy-slide__text">
+                                        <p class="strategy-slide__title">Second Strategy</p>
+                                        <p class="strategy-slide__description">What this indicator shows: it has two levels: 1-level 70 and 2-level 30 between these levels, a line is drawn which, when crossing the lower level, indicates that the price is greatly oversold and means that the price will soon rise. It follows that when the line crosses the lower level to the top, the bay transaction opens and when the price moves the upper level down, the sell transaction opens. A very popular strategy described in many technical analysis books.</p>
                                     </div>
                                 </div>
-                                <div class="last-price"><span class="cell">0,0174</span><span class="last">Last Price</span></div>
                             </div>
-                            <div class="order-book">
-                                <div class="orders">
-                                    <div class="order"><span class="progress-light l-red" style="width:27%;"></span><span class="progress-light d-red" style="width:5%;"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                            <div class="strategy-wrapper">
+                                <div class="strategy-slide">
+                                    <div class="strategy-slide__img"><span class="strategy-slide__number">1</span><img src="./img/strategy-1.png" alt></div>
+                                    <div class="strategy-slide__text">
+                                        <p class="strategy-slide__title">Second Strategy</p>
+                                        <p class="strategy-slide__description">What this indicator shows: it has two levels: 1-level 70 and 2-level 30 between these levels, a line is drawn which, when crossing the lower level, indicates that the price is greatly oversold and means that the price will soon rise. It follows that when the line crosses the lower level to the top, the bay transaction opens and when the price moves the upper level down, the sell transaction opens. A very popular strategy described in many technical analysis books.</p>
                                     </div>
-                                    <div class="order"><span class="progress-light l-red" style="width:30%;"></span><span class="progress-light d-red" style="width:7%;"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-red" style="width:80%;"></span><span class="progress-light d-red" style="width:10%;"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-red" style="width:45%;"></span><span class="progress-light d-red" style="width:15%;"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-red" style="width:95%;"></span><span class="progress-light d-red" style="width:1%;"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-red"></span><span class="progress-light d-red" style="width:5%;"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-red"></span><span class="progress-light d-red" style="width:3%;"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-red"></span><span class="progress-light d-red" style="width:5%;"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-red"></span><span class="progress-light d-red" style="width:18%;"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-red"></span><span class="progress-light d-red" style="width:9.2%;"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-red"></span><span class="progress-light d-red" style="width:4%;"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-red"></span><span class="progress-light d-red"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-red"></span><span class="progress-light d-red"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
-                                    </div>
-                                    <div class="order"><span class="progress-light l-red"></span><span class="progress-light d-red"></span><span class="cell emp">0,0174</span><span class="cell">0,5125</span><span class="cell">20.4124</span>
-                                        <div class="cell exch"> <img src="./img/bitcoin.png" alt><img src="./img/eth.png" alt><img class="arrow" src="./img/arrow-down.svg" alt></div>
+                                </div>
+                            </div>
+                            <div class="strategy-wrapper">
+                                <div class="strategy-slide">
+                                    <div class="strategy-slide__img"><span class="strategy-slide__number">1</span><img src="./img/strategy-1.png" alt></div>
+                                    <div class="strategy-slide__text">
+                                        <p class="strategy-slide__title">Second Strategy</p>
+                                        <p class="strategy-slide__description">What this indicator shows: it has two levels: 1-level 70 and 2-level 30 between these levels, a line is drawn which, when crossing the lower level, indicates that the price is greatly oversold and means that the price will soon rise. It follows that when the line crosses the lower level to the top, the bay transaction opens and when the price moves the upper level down, the sell transaction opens. A very popular strategy described in many technical analysis books.</p>
                                     </div>
                                 </div>
                             </div>
@@ -728,7 +275,73 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <section class="details">
+            <div class="container">
+                <div class="title details__title">
+                    <p class="title__section-name">features</p>
+                    <h2>Quality in Detail</h2>
+                </div>
+                <div class="detail-items js-detail-items">
+                    <div class="detail-item">
+                        <div class="detail-item__img"><span class="icon-icon-logic"></span></div>
+                        <div class="detail-item__text">
+                            <h3>New logic of work and entry points</h3>
+                            <p class="detail-item__description">Now the rules of entry are more logical. The probability of opening deals on BUY and SELL is approximately equal.</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-item__img"><span class="icon-icon-stop"></span></div>
+                        <div class="detail-item__text">
+                            <h3>Running Trailing Stop</h3>
+                            <p class="detail-item__description">Trade is many times better. So that trades trailed in the stop, you need to take profit to set large or even remove.</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-item__img"><span class="icon-icon-trades"></span></div>
+                        <div class="detail-item__text">
+                            <h3>Trades are opened with a new candle</h3>
+                            <p class="detail-item__description">After start on the timeframe set in the settings. (When restarting the trading bot, new positions won’t be opened).</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-item__img"><span class="icon-icon-rocket"></span></div>
+                        <div class="detail-item__text">
+                            <h3>Trading is more efficient</h3>
+                            <p class="detail-item__description">If strategies trade on different timeframes, a situation can often arise when one system trades on BUY.</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-item__img"><span class="icon-icon-parametr"></span></div>
+                        <div class="detail-item__text">
+                            <h3>Parameter lot_decimal</h3>
+                            <p class="detail-item__description">Indicated to what accuracy it is necessary to round the lot in transactions. If you set 0, then the system itself.</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-item__img"><span class="icon-icon-order"></span></div>
+                        <div class="detail-item__text">
+                            <h3>When opening and modifying orders</h3>
+                            <p class="detail-item__description">In the logs, the opening logic and all errors are written, as well as a message: what was the price for sending.</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-item__img"><span class="icon-icon-trans"></span></div>
+                        <div class="detail-item__text">
+                            <h3>Take Profit on transactions</h3>
+                            <p class="detail-item__description">Is checked every tick. If you manually close the deal or move TP, the system will recalculate everything.</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-item__img"><span class="icon-icon-check"></span></div>
+                        <div class="detail-item__text">
+                            <h3>In the calculation of opening prices </h3>
+                            <p class="detail-item__description">Levels of setting TP, Thrall SL expert makes calculations from the true opening price. (Opening price including).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </body>
     <script src="./libs/js/vendor.min.js"></script>
     <script src="./js/index.js"></script>

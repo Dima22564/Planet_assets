@@ -1,0 +1,30 @@
+// Blocks
+@import './blocks/_video-item'
+@import './blocks/_flawless'
+
+
+.feedback
+  padding: 72px 0
+  &__title
+    margin-bottom: 102px
+    +xl-one(margin-bottom, 48px)
+  &__video-items
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    +lg
+      display: initial
+  &__video-item
+    margin-bottom: 30px
+    +lg
+      max-width: 330px
+      margin: 0 10px
+    +sm-one(max-width, 255px)
+  &__revenue
+    flex-direction: row-reverse
+    justify-content: space-between
+    margin-bottom: 24px
+    .revenue__title 
+      margin-left: 0
+  &__flawless
+    +lg-one(margin-bottom, 48px)

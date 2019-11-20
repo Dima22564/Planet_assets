@@ -1,0 +1,26 @@
+.detail-item
+  max-width: calc(25% - 22px)
+  width: 100%
+  padding: 16px
+  border-radius: 12px
+  +shadow
+  background: $white
+  margin-bottom: 30px
+  +xl-one(max-width, calc(33.333% - 22px))
+  +md-one(max-width, calc(50% - 22px))
+  +sm
+    max-width: 255px
+    margin: 0 8px
+  &__img
+    display: flex
+    align-items: center
+    justify-content: center
+    background: $l-violet
+    color: $violet
+    width: 96px
+    height: 96px
+    border-radius: 50%
+    margin-bottom: 24px
+    font-size: 42px
+  &__description
+    margin-top: 16px

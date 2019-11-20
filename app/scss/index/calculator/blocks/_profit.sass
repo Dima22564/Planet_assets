@@ -1,0 +1,75 @@
+.profit
+  +shadow
+  padding: 24px
+  background: $white
+  border-radius: 12px
+  &__top
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 40px
+    +sm
+      flex-direction: column
+      align-items: flex-start
+  &__type
+    display: flex
+    align-items: center
+    +sm-one(margin-bottom, 40px)
+  &__btn
+    border: none
+    font-weight: 600
+    font-size: 16px
+    line-height: 24px
+    padding: 12px 24px
+    border-radius: 24px
+    background: none
+    cursor: pointer
+    &:not(:last-child)
+      margin-right: 24px
+    &_active
+      color: $violet
+      background: $l-violet
+    &_small
+      font-weight: 500
+      padding: 6px 16px
+      font-size: 14px
+  &__percent
+    font-size: 16px
+  &__range-slider
+    &:not(:last-child)
+      margin-bottom: 24px
+  &__functions
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 24px
+    +sm
+      flex-direction: column
+      align-items: flex-start
+  &__func-btns
+    +sm
+      display: flex
+      width: 100%
+      flex-direction: column
+      margin-top: 16px
+    .profit__btn
+      +sm
+        width: 100%
+        margin: 0
+        &:not(:last-child)
+          margin-bottom: 8px
+  &__name 
+    color: rgba(20, 16, 41, 0.4)
+    font-size: 14px
+    line-height: 16px
+  &__bottom
+    display: flex
+    align-items: center
+    justify-content: space-between
+    +sm
+      flex-direction: column
+      align-items: flex-start
+    .btn
+      +sm
+        width: 100%
+        margin-top: 24px
