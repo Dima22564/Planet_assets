@@ -3,21 +3,30 @@
   background: $white
   margin-bottom: 36px
   +md-one(padding-bottom, 24px)
+  +media-b(833)
+    display: none
   &-wrapper
     display: flex
     align-items: center
     padding: 12px
     justify-content: space-between
+  &__container
+    +xl
+      max-width: calc( 100% )
   &__nav
     margin-left: 60px
   &__dark-mode
     margin-left: 48px
+    +media-b(1061)
+      margin-left: 11px
   &__langs
-    margin-left: 48px
+    margin-left: 12px
   &__btn
     margin-left: 12px
     display: flex
     align-items: center
+    +media-b(1024)
+      display: none
     .fa
       color: $white
       margin-right: 14px
@@ -35,15 +44,46 @@
     align-items: center
   &__link
     font-size: 16px
+    color: $black
+    transition: all 0.2s
+    &:hover
+      color: $gray
   &__item
     display: flex
     align-items: center
     cursor: pointer
+    position: relative
     &:not(:last-child)
       margin-right: 48px
+      +xl-one(margin-right, 24px)
+    &_margin
+      margin-right: 0 !important
+    &_active
+      .nav__arrow
+        transform: rotate(-180deg)
+  &__item-wrapper
+    position: relative
   &__arrow
     margin-left: 3px
     transition: all 0.2s
+  &__drop
+    position: absolute
+    bottom: 0
+    left: 0
+    background: $white
+    box-shadow: 0 16px 16px -4px rgba(20, 16, 41, 0.06), 0 4px 8px -1px rgba(20, 16, 41, 0.06), 0 0 1px 0 rgba(20, 16, 41, 0.12)
+    border-radius: 12px
+    min-width: 125px
+    transform: translateY(calc(100% + 10px))
+    z-index: 555
+    display: none
+  &__drop-item
+    padding: 6px 12px
+    transition: all 0.2s
+    font-size: 14px
+    color: $black
+    &:hover
+      background: rgba(20, 16, 41, 0.02)
 .langs
   position: relative
   font-size: 16px
@@ -80,6 +120,7 @@
     transform: translateY(calc(100% + 4px))
     overflow: hidden
     display: none
+    z-index: 555
   &__item
     padding: 6px 16px 6px 12px
     background: $white
@@ -87,3 +128,6 @@
     display: flex
     align-items: center
     justify-content: center
+    transition: all 0.2s
+    &:hover
+      background: rgba(20, 16, 41, 0.02)

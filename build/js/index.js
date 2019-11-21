@@ -57,4 +57,79 @@ $(document).ready(function () {
   $(window).on('resize', function () {
     $('.js-detail-items').slick('resize');
   });
+  $('.js-case-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: true,
+    prevArrow: $('.js-case-slider-prev'),
+    nextArrow: $('.js-case-slider-next'),
+    appendDots: $('.js-slider-dots') // variableWidth: true
+
+  });
+  $('.js-about-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    mobileFirst: true,
+    variableWidth: true,
+    arrows: false,
+    dots: false,
+    responsive: [{
+      breakpoint: 992,
+      settings: 'unslick'
+    }]
+  });
+  $(window).on('resize', function () {
+    $('.js-about-slider').slick('resize');
+  });
+  $('.js-faq').click(function (e) {
+    // $('.faq-item__text').slideUp()
+    $(this).parent().find('.faq-item__text').slideToggle();
+  });
+  $('.faq-item__text').hover(function (e) {
+    $(this).show();
+  }, function (e) {
+    $(this).slideUp();
+  });
+  $('.js-drop-menu').click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass('nav__item_active');
+    $('.js-nav-drop').slideToggle();
+  });
+  $('.js-drop-menu').hover(function (e) {
+    $('.js-nav-drop').slideDown();
+    $(this).addClass('nav__item_active');
+  });
+  $('.js-nav-drop').hover(function (e) {
+    $(this).show();
+  }, function (e) {
+    $(this).slideUp();
+    $('.js-drop-menu').removeClass('nav__item_active');
+  });
+  $('.js-lang').click(function (e) {
+    $('.langs__list').slideToggle();
+  });
+  $('.langs__list').hover(function (e) {
+    $(this).show();
+  }, function (e) {
+    $(this).slideUp();
+  });
+  $('.js-dark-mode').click(function (e) {
+    $('.js-toggler-dark-mode').toggleClass('toggler_active');
+  });
+  $('.js-to-langs').click(function (e) {
+    $('.mobile-drop').hide(100, function (e) {
+      $('.js-langs-drop').show();
+    });
+  });
+  $('.js-to-drop').click(function (e) {
+    $('.js-langs-drop').hide(100, function (e) {
+      $('.js-mobile-drop').show();
+    });
+  });
+  $('.js-burger').click(function () {
+    $('.js-langs-drop').hide();
+    $('.js-mobile-drop').slideToggle();
+    $(this).toggleClass('fa-times').toggleClass('fa-bars');
+  });
 });

@@ -1,0 +1,38 @@
+.form
+  padding: 40px
+  background: $white
+  border-radius: 12px
+  box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px 0 rgba(20, 16, 41, 0.12)
+  +lg-one(margin-top, 55px)
+  +md-one(padding, 24px)
+  &__title
+    margin-bottom: 56px
+    font-size: 24px
+    line-height: 32px
+    font-weight: 600
+    color: $black
+  &__input
+    margin-bottom: 24px
+  &__checkbox
+    margin-bottom: 40px
+  &__bottom
+    display: flex
+    align-items: center
+    justify-content: space-between
+    +sm
+      flex-direction: column-reverse
+  &__socials
+    display: flex
+    align-items: center
+    width: 50%
+    justify-content: space-between
+    +sm
+      width: 100%
+      justify-content: space-around
+      margin-bottom: 26px
+  &__social
+    font-size: 18px
+    color: #141029
+    opacity: 0.4
+  &__btn
+    +sm-one(width, 100%)

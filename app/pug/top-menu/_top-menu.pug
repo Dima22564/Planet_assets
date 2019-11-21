@@ -1,5 +1,5 @@
 section.top-menu
-  .container
+  .container.top-menu__container
     .top-menu-wrapper
       a(href="").top-menu__logo
         img(src="./img/logo.png", alt="")
@@ -9,16 +9,24 @@ section.top-menu
             a(href="").nav__link Forex4you
           li.nav__item
             a(href="").nav__link How It Works
-          li.nav__item
-            a(href="").nav__link More
-            i.fa.fa-angle-down.nav__arrow(aria-hidden="true")
-      .dark-mode.top-menu__dark-mode
+          li.nav__item-wrapper
+            .nav__item.nav__item_margin.js-drop-menu
+              a(href="").nav__link More
+              i.fa.fa-angle-down.nav__arrow(aria-hidden="true")
+            .nav__drop.js-nav-drop
+              .nav__drop-item 
+                a(href="") Item 1
+              .nav__drop-item 
+                a(href="") Item 1
+              .nav__drop-item 
+                a(href="") Item 1
+      .dark-mode.top-menu__dark-mode.js-dark-mode
         .toggler.js-toggler-dark-mode
           .toggler__way
           .toggler__circle
         span.dark-mode__label Dark Mode
       .langs.top-menu__langs
-        .langs__btn
+        .langs__btn.js-lang
           img(src="./img/russia.svg", alt="").langs__img
           span.langs__text ru
         ul.langs__list

@@ -1,0 +1,47 @@
+.case-slider
+  &-wrap
+    position: relative
+  &__slide
+    img
+      width: 100%
+  &__btn
+    width: 48px
+    height: 48px
+    box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px rgba(20, 16, 41, 0.12)
+    background: $white
+    cursor: pointer
+    display: flex
+    align-items: center
+    justify-content: center
+    border: none
+    border-radius: 50%
+    position: absolute
+    top: 50%
+    z-index: 10
+    +lg-one(top, 34%)
+    &_right
+      right: 0
+    i
+      font-size: 25px
+  &__dots
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-top: 52px
+    .slick-dots
+      display: flex
+      align-items: center
+      button
+        font-size: 0
+        line-height: 0
+        display: none
+      li
+        width: 8px
+        height: 8px
+        border-radius: 50%
+        background: rgba(20, 16, 41, 0.06)
+        cursor: pointer
+        &:not(:last-child)
+          margin-right: 8px
+      .slick-active
+        background: $violet

@@ -1,0 +1,54 @@
+.footer-top
+  display: flex
+  align-items: center
+  justify-content: space-between
+  +lg-one(flex-wrap, wrap)
+  &__lang
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 48px
+    height: 48px
+    border-radius: 50%
+    background: rgba(20, 16, 41, 0.02)
+  &__input
+    display: flex
+    align-items: center
+    width: 30.5%
+    +lg
+      width: 100%
+      margin: 24px 0
+  &__btn
+    border-radius: 50%
+    width: 48px
+    height: 48px
+    box-shadow: 0 8px 8px -4px rgba(156, 66, 245, 0.12), 0 16px 24px 0 rgba(156, 66, 245, 0.24), 0 2px 4px -1px rgba(27, 10, 82, 0.12), 0 0 1px 0 rgba(156, 66, 245, 0.24)
+    background-image: linear-gradient(135deg, #ff00aa, #9c42f5 53%, #5d2de1)
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-shrink: 0
+    margin-left: -20px
+    i
+      color: $white
+      font-size: 25px
+  &__socials
+    display: flex
+    align-items: center
+    +md
+      flex-wrap: wrap
+      padding-right: 43px
+  &__social
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 48px
+    height: 48px
+    border-radius: 50%
+    background-color: rgba(20, 16, 41, 0.02)
+    font-size: 18px
+    +sm-one(margin, 12px 0)
+    &:not(:last-child)
+      margin-right: 24px
+      +xl-one(margin-right, 12px)
+      +lg-one(margin-right, 24px)

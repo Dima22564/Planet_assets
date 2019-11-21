@@ -11,23 +11,30 @@
     </head>
     <body>
         <section class="top-menu">
-            <div class="container">
+            <div class="container top-menu__container">
                 <div class="top-menu-wrapper"><a class="top-menu__logo" href><img src="./img/logo.png" alt></a>
                     <nav class="nav top-menu__nav">
                         <ul class="nav__list">
                             <li class="nav__item"><a class="nav__link" href>Forex4you</a></li>
                             <li class="nav__item"><a class="nav__link" href>How It Works</a></li>
-                            <li class="nav__item"><a class="nav__link" href>More</a><i class="fa fa-angle-down nav__arrow" aria-hidden="true"></i></li>
+                            <li class="nav__item-wrapper">
+                                <div class="nav__item nav__item_margin js-drop-menu"><a class="nav__link" href>More</a><i class="fa fa-angle-down nav__arrow" aria-hidden="true"></i></div>
+                                <div class="nav__drop js-nav-drop">
+                                    <div class="nav__drop-item"> <a href="">Item 1</a></div>
+                                    <div class="nav__drop-item"> <a href="">Item 1</a></div>
+                                    <div class="nav__drop-item"> <a href="">Item 1</a></div>
+                                </div>
+                            </li>
                         </ul>
                     </nav>
-                    <div class="dark-mode top-menu__dark-mode">
+                    <div class="dark-mode top-menu__dark-mode js-dark-mode">
                         <div class="toggler js-toggler-dark-mode">
                             <div class="toggler__way"></div>
                             <div class="toggler__circle"></div>
                         </div><span class="dark-mode__label">Dark Mode</span>
                     </div>
                     <div class="langs top-menu__langs">
-                        <div class="langs__btn"><img class="langs__img" src="./img/russia.svg" alt><span class="langs__text">ru</span></div>
+                        <div class="langs__btn js-lang"><img class="langs__img" src="./img/russia.svg" alt><span class="langs__text">ru</span></div>
                         <ul class="langs__list">
                             <li class="langs__item"><img src="./img/russia.svg" alt><span class="langs__text">en</span></li>
                             <li class="langs__item"><img src="./img/russia.svg" alt><span class="langs__text">en</span></li>
@@ -39,8 +46,29 @@
                 </div>
             </div>
         </section>
+        <section class="top-menu-mobile">
+            <div class="container">
+                <div class="content"><a class="top-menu-mobile__logo" href><img src="./img/logo.png" alt></a><i class="fa fa-bars top-menu-mobile__burger js-burger" aria-hidden="true"></i></div>
+                <div class="mobile-drop-wrapper">
+                    <div class="mobile-drop js-mobile-drop">
+                        <div class="mobile-drop__links"><a class="mobile-drop__link" href>Home</a><a class="mobile-drop__link" href>Calc</a><a class="mobile-drop__link" href>Product</a><a class="mobile-drop__link" href>Reviews</a><a class="mobile-drop__link" href>Strategies</a><a class="mobile-drop__link" href>Features</a><a class="mobile-drop__link" href>Partners</a><a class="mobile-drop__link" href>Case</a><a class="mobile-drop__link" href>How it Works</a><a class="mobile-drop__link" href>FAQ</a><a class="mobile-drop__link" href>Start Earning</a></div>
+                        <div class="dark-mode mobile-drop__dark-mode js-dark-mode">
+                            <div class="toggler js-toggler-dark-mode">
+                                <div class="toggler__way"></div>
+                                <div class="toggler__circle"></div>
+                            </div><span class="dark-mode__label">Dark Mode</span>
+                        </div>
+                        <div class="mobile-drop__lang mobile-drop__lang_flex js-to-langs"><img class="mobile-drop__img" src="./img/united-kingdom.svg" alt><span>English</span><i class="fa fa-angle-right mobile-drop__arrow" aria-hidden="true"></i></div>
+                        <button class="btn btn-violet mobile-drop__btn"><i class="fa fa-telegram" aria-hidden="true"></i><span>Get in Touch</span></button>
+                    </div>
+                    <div class="langs-drop js-langs-drop">
+                        <div class="langs-drop__top js-to-drop"><i class="fa fa-angle-left" aria-hidden="true"></i><span class="lang-drop__text">English</span><img src="./img/united-kingdom.svg" alt></div><a class="mobile-drop__lang" href title><img class="mobile-drop__img" src="./img/united-kingdom.svg" alt><span>English</span></a><a class="mobile-drop__lang" href title><img class="mobile-drop__img" src="./img/united-kingdom.svg" alt><span>English</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <header class="header">
-            <div class="container"><img class="header__bg-img" src="./img/bg-img-1.jpg" alt>
+            <div class="container"><img class="header__bg-img" src="./img/bg-img-1.png" alt>
                 <div class="row">
                     <div class="col-xl-6 col-lg-7 col-md-7">
                         <div class="main-title">
@@ -95,7 +123,7 @@
         <section class="calculator">
             <div class="container">
                 <div class="row justify-content-md-center">
-                    <div class="col-xl-7 col-lg-7 order-md-2 order-sm-2 order-2">
+                    <div class="col-xl-7 col-lg-7 order-md-2 order-sm-2 order-2 order-xl-0">
                         <div class="profit">
                             <div class="profit__top">
                                 <div class="profit__type">
@@ -196,7 +224,7 @@
         <section class="feedback">
             <div class="container">
                 <div class="row justify-content-md-center">
-                    <div class="col-xl-6 col-lg-6 col-md-12 order-md-2 order-sm-2 order-2">
+                    <div class="col-xl-6 col-lg-6 col-md-12 order-md-2 order-sm-2 order-2 order-xl-0">
                         <div class="feedback__video-items js-feedback__video-items">
                             <div class="video-item feedback__video-item"><img class="video-item__img" src="./img/video.jpg" alt><img class="video-item__play" src="./img/play.svg" alt></div>
                             <div class="video-item feedback__video-item"><img class="video-item__img" src="./img/video.jpg" alt><img class="video-item__play" src="./img/play.svg" alt></div>
@@ -342,6 +370,334 @@
                 </div>
             </div>
         </section>
+        <section class="partners">
+            <div class="container">
+                <div class="title partners__title">
+                    <p class="title__section-name">partners</p>
+                    <h2>3 Reliable Broker Partners</h2>
+                </div>
+                <div class="partners__wrap">
+                    <div class="row justify-content-md-center">
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="partner">
+                                <div class="partner__img"><img src="./img/partner-1.png" alt></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="partner">
+                                <div class="partner__img"><img src="./img/partner-2.png" alt></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="partner">
+                                <div class="partner__img"><img src="./img/partner-3.png" alt></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="partners__advantages">
+                    <div class="row">
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="adv">
+                                <div class="adv__img-wrap"><span class="icon-part-1"></span></div>
+                                <div class="revenue partners__revenue">
+                                    <p class="revenue__price">24/7</p>
+                                    <div class="revenue__title"> <span>Withdraw </span><span>funds</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="adv">
+                                <div class="adv__img-wrap"><span class="icon-part-2"></span></div>
+                                <div class="revenue partners__revenue">
+                                    <p class="revenue__price">100 <span class="revenue__percent">%</span> </p>
+                                    <div class="revenue__title"> <span>minimal </span><span>deposit</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="adv">
+                                <div class="adv__img-wrap"><span class="icon-part-3"></span></div>
+                                <div class="revenue partners__revenue">
+                                    <p class="revenue__price">1:1k </p>
+                                    <div class="revenue__title"> <span>leverage</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="adv">
+                                <div class="adv__img-wrap"><span class="icon-part-4"></span></div>
+                                <div class="revenue partners__revenue">
+                                    <p class="revenue__price">50 </p>
+                                    <div class="revenue__title"> <span>currency </span><span>pairs</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="adv">
+                                <div class="adv__img-wrap"><span class="icon-part-5"></span></div>
+                                <div class="revenue partners__revenue">
+                                    <p class="revenue__price">10 <span class="revenue__percent">YEARS</span></p>
+                                    <div class="revenue__title"> <span>as leading </span><span>brokers</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                            <div class="adv">
+                                <div class="adv__img-wrap"><span class="icon-part-6"></span></div>
+                                <div class="revenue partners__revenue">
+                                    <p class="revenue__price">50 <span class="revenue__percent">%</span></p>
+                                    <div class="revenue__title"> <span>Affiliate </span><span>Payouts</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="partners__pay">
+                    <div class="row justify-content-md-center">
+                        <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                            <div class="pay-item pay-item_visa">
+                                <div class="pay-item__img"><img src="./img/pay-1.png" alt></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                            <div class="pay-item pay-item_mastercard">
+                                <div class="pay-item__img"><img src="./img/pay-2.png" alt></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                            <div class="pay-item pay-item_qiwi">
+                                <div class="pay-item__img"><img src="./img/pay-3.png" alt></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                            <div class="pay-item pay-item_net">
+                                <div class="pay-item__img"><img src="./img/pay-4.png" alt></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                            <div class="pay-item pay-item_skrill">
+                                <div class="pay-item__img"><img src="./img/pay-5.png" alt></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-6">
+                            <div class="pay-item pay-item_webmoney">
+                                <div class="pay-item__img"><img src="./img/pay-6.png" alt></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="case">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-xl-7 col-lg-7 order-md-2 order-xl-0">
+                        <div class="case-slider-wrap">
+                            <button class="case-slider__btn js-case-slider-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                            <div class="case-slider js-case-slider">
+                                <div class="case-slider__slide"><img src="./img/slide-1.png" alt></div>
+                                <div class="case-slider__slide"><img src="./img/slide-1.png" alt></div>
+                                <div class="case-slider__slide"><img src="./img/slide-1.png" alt></div>
+                                <div class="case-slider__slide"><img src="./img/slide-1.png" alt></div>
+                                <div class="case-slider__slide"><img src="./img/slide-1.png" alt></div>
+                            </div>
+                            <button class="case-slider__btn case-slider__btn_right js-case-slider-next"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                            <div class="case-slider__dots js-slider-dots"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 offset-xl-1 col-lg-5 col-md-7">
+                        <div class="title case__title">
+                            <p class="title__section-name">CASE</p>
+                            <h2>Partner Results</h2>
+                        </div>
+                        <div class="flawless case__flawless">
+                            <div class="flawless__line"><span class="flawless__subtitle">Deposit amount</span><span class="flawless__value"><span>$</span> 3,000</span></div>
+                            <div class="flawless__line"><span class="flawless__subtitle">Aug-Sep 2019 Earnings</span><span class="flawless__value"> 42 <span>%</span></span></div>
+                            <div class="revenue feedback__revenue">
+                                <p class="revenue__price"><span class="revenue__percent">$</span> 4,850</p>
+                                <div class="revenue__title"> <span>Total </span><span>revenue</span></div>
+                            </div>
+                            <button class="btn btn-violet flawless__btn">Start Earning</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <div class="title about__title">
+                    <p class="title__section-name">about</p>
+                    <h2>How It Works</h2>
+                </div>
+                <div class="about-items-wrap">
+                    <div class="about-slider js-about-slider">
+                        <div class="about-item">
+                            <div class="about-item__circle"><span></span></div>
+                            <div class="about-item__content">
+                                <div class="about-item__label">1</div>
+                                <p class="about-item__title">Start</p>
+                                <p class="abou-item__text">Leave a request for the purchase of a robot</p>
+                            </div>
+                        </div>
+                        <div class="about-item">
+                            <div class="about-item__circle"><span></span></div>
+                            <div class="about-item__content">
+                                <div class="about-item__label">2</div>
+                                <p class="about-item__title">Purchase</p>
+                                <p class="abou-item__text">Make a purchase through the Chat bot in Telegram or manager</p>
+                            </div>
+                        </div>
+                        <div class="about-item">
+                            <div class="about-item__circle"><span></span></div>
+                            <div class="about-item__content">
+                                <div class="about-item__label">3</div>
+                                <p class="about-item__title">Register</p>
+                                <p class="abou-item__text">Register with a broker and open an account</p>
+                            </div>
+                        </div>
+                        <div class="about-item">
+                            <div class="about-item__circle"><span></span></div>
+                            <div class="about-item__content">
+                                <div class="about-item__label">4</div>
+                                <p class="about-item__title">Set Up</p>
+                                <p class="abou-item__text">Our manager installs a robot for you</p>
+                            </div>
+                        </div>
+                        <div class="about-item">
+                            <div class="about-item__circle"><span></span></div>
+                            <div class="about-item__content">
+                                <div class="about-item__label">5</div>
+                                <p class="about-item__title">Deposit</p>
+                                <p class="abou-item__text">Replenish the deposit and the robot begins to trade</p>
+                            </div>
+                        </div>
+                        <div class="about-item">
+                            <div class="about-item__circle"><span></span></div>
+                            <div class="about-item__content about-item__content_violet">
+                                <div class="about-item__label about-item__label_violet">6</div>
+                                <p class="about-item__title about-item__title_violet">Trading Bot</p>
+                                <button class="btn btn-white about-item__btn">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="faq">
+            <div class="container">
+                <div class="title faq__title">
+                    <p class="title__section-name">info</p>
+                    <h2>FAQ</h2>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="faq-item">
+                            <div class="faq-item__top js-faq">
+                                <p class="faq-item__title">Does the bot earn always?</p><span class="faq-item__icon">+</span>
+                            </div>
+                            <p class="faq-item__text">Our company has been actively helping customers solve their business problems for more than 20 years. The experience gained over all this time helps us to optimally approach the execution of orders and successfully build the process of work on the project.</p>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-item__top js-faq">
+                                <p class="faq-item__title">The minimum amount of the broker’s realization of the balance?</p><span class="faq-item__icon">+</span>
+                            </div>
+                            <p class="faq-item__text">Our company has been actively helping customers solve their business problems for more than 20 years. The experience gained over all this time helps us to optimally approach the execution of orders and successfully build the process of work on the project.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="faq-item">
+                            <div class="faq-item__top js-faq">
+                                <p class="faq-item__title">What are the warranties?</p><span class="faq-item__icon">+</span>
+                            </div>
+                            <p class="faq-item__text">Our company has been actively helping customers solve their business problems for more than 20 years. The experience gained over all this time helps us to optimally approach the execution of orders and successfully build the process of work on the project.</p>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-item__top js-faq">
+                                <p class="faq-item__title">Why for Forex4you broker?</p><span class="faq-item__icon">+</span>
+                            </div>
+                            <p class="faq-item__text">Our company has been actively helping customers solve their business problems for more than 20 years. The experience gained over all this time helps us to optimally approach the execution of orders and successfully build the process of work on the project.</p>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-item__top js-faq">
+                                <p class="faq-item__title">How does the bot work?</p><span class="faq-item__icon">+</span>
+                            </div>
+                            <p class="faq-item__text">Our company has been actively helping customers solve their business problems for more than 20 years. The experience gained over all this time helps us to optimally approach the execution of orders and successfully build the process of work on the project.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__btn">
+                    <button class="btn btn-white">Show More</button>
+                </div>
+            </div>
+        </section>
+        <section class="start">
+            <div class="container">
+                <div class="start-wrap">
+                    <div class="row justify-content-md-center">
+                        <div class="col-xl-4 offset-xl-1 offset-lg-1 col-lg-4 col-md-7">
+                            <div class="title start__title">
+                                <p class="title__section-name title__section-name_white">Stay up-to-date</p>
+                                <h2 class="white">Trading Bot Earning</h2>
+                                <p class="title__description title__description_white">Earn on the Trading Bot from 10% per month without risks and Forex knowledge</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 offset-xl-1 col-lg-6 offset-lg-0 col-md-8">
+                            <form class="form" action>
+                                <p class="form__title">Start Earning</p>
+                                <div class="input form__input">
+                                    <input class="input__input" type="text" placeholder="Name">
+                                </div>
+                                <div class="input form__input">
+                                    <input class="input__input" type="text" placeholder="Phone Number">
+                                </div>
+                                <div class="input form__input">
+                                    <input class="input__input" type="text" placeholder="Email">
+                                </div>
+                                <div class="checkbox form__checkbox">
+                                    <input class="checkbox__input" id="link" name type="checkbox">
+                                    <label class="checkbox__label" for="link"> <span>By checking this checkbox I confirm that I agree to the <a class="checkbox__link" href="#">Privacy Policy, Terms & Conditions</a> and <a class="checkbox__link" href="#">Website Disclaimers</a></span></label>
+                                </div>
+                                <div class="form__bottom">
+                                    <button class="btn btn-violet form__btn">Start Earning</button>
+                                    <div class="form__socials"><a class="form__social" href><span class="icon-social"></span></a><a class="form__social" href><i class="fa fa-telegram" aria-hidden="true"></i></a><a class="form__social" href><i class="fa fa-whatsapp" aria-hidden="true"></i></a><a class="form__social" href><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-top footer__top"><a class="footer__logo" href><img src="./img/logo.png" alt></a>
+                    <div class="footer-top__lang"><img src="./img/united-kingdom.svg" alt></div>
+                    <div class="input footer-top__input">
+                        <input class="input__input" type="text" placeholder="Email">
+                        <button class="btn footer-top__btn"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="footer-top__socials"><a class="footer-top__social" href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a><a class="footer-top__social" href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a><a class="footer-top__social" href="#"><i class="fa fa-vk" aria-hidden="true"></i></a><a class="footer-top__social" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a><a class="footer-top__social" href="#"><span class="icon-social"></span></a><a class="footer-top__social" href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></div>
+                </div>
+                <div class="footer-links">
+                    <ul class="footer-links__list">
+                        <li class="footer-links__item"><a class="footer-links__link" href>Home</a></li>
+                        <li class="footer-links__item"><a class="footer-links__link" href>Calc</a></li>
+                        <li class="footer-links__item"><a class="footer-links__link" href>product</a></li>
+                        <li class="footer-links__item"><a class="footer-links__link" href>reviews</a></li>
+                        <li class="footer-links__item"><a class="footer-links__link" href>strategies</a></li>
+                        <li class="footer-links__item"><a class="footer-links__link" href>features</a></li>
+                    </ul>
+                    <ul class="footer-links__list">
+                        <li class="footer-links__item"><a class="footer-links__link" href>partners</a></li>
+                        <li class="footer-links__item"><a class="footer-links__link" href>case</a></li>
+                        <li class="footer-links__item"><a class="footer-links__link" href>how it works</a></li>
+                        <li class="footer-links__item"><a class="footer-links__link" href>faq</a></li>
+                        <li class="footer-links__item"><a class="footer-links__link" href>start earning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom"><span class="footer-bottom__item">© PlanetAssets, 2019. All rights reserved.</span><a class="footer-bottom__item footer-bottom__item_50" href>Privacy Policy</a><a class="footer-bottom__item footer-bottom__item_50" href>Terms & Conditions</a><a class="footer-bottom__item footer-bottom__item_50" href>Website Disclaimers</a><a class="footer-bottom__item footer-bottom__item_50" href>made by <span>roobinium</span></a></div>
+            </div>
+        </footer>
     </body>
     <script src="./libs/js/vendor.min.js"></script>
     <script src="./js/index.js"></script>

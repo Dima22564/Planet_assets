@@ -1,0 +1,65 @@
+.about-item
+  display: flex
+  flex-direction: column
+  max-width: calc(16.66% - 30px)
+  width: 100%
+  +xl
+    max-width: calc(16.66% - 15px)
+  +lg
+    max-width: 160px
+    margin: 0 7px
+  &__circle
+    margin-bottom: 48px
+    width: 24px
+    height: 24px
+    border-radius: 50%
+    box-shadow: 0 8px 8px -4px rgba(156, 66, 245, 0.06), 0 2px 4px -1px rgba(27, 10, 82, 0.06), 0 0 1px 0 rgba(156, 66, 245, 0.12)
+    background: $white
+    display: flex
+    align-items: center
+    justify-content: center
+    z-index: 5
+    span
+      width: 8px
+      height: 8px
+      border-radius: 12px
+      background: $violet
+  &__content
+    width: 100%
+    background: $white
+    border-radius: 12px
+    +shadow
+    padding: 16px
+    &_violet
+      box-shadow: 0 8px 8px -4px rgba(156, 66, 245, 0.12), 0 16px 24px 0 rgba(156, 66, 245, 0.24), 0 2px 4px -1px rgba(27, 10, 82, 0.12), 0 0 1px 0 rgba(156, 66, 245, 0.24)
+      background-image: linear-gradient(144deg, #ff00aa, #9c42f5 53%, #5d2de1)
+
+  &__label
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    width: 48px
+    height: 48px
+    border-radius: 50%
+    background: $l-violet
+    font-size: 24px
+    line-height: 28px
+    font-weight: bold
+    color: $violet
+    margin-bottom: 24px
+    &_violet
+      background: rgba(255, 255, 255, 0.06)
+      color: $white
+  &__title
+    font-size: 20px
+    line-height: 28px
+    color: $black
+    font-weight: 600
+    margin-bottom: 16px
+    &_violet
+      color: $white
+      margin-bottom: 39px
+  &__btn
+    padding: 12px 0
+    width: 100%
+    

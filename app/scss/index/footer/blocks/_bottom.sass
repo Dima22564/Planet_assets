@@ -1,0 +1,13 @@
+.footer-bottom
+  display: flex
+  align-items: center
+  justify-content: space-between
+  +lg
+    flex-wrap: wrap
+  &__item
+    +lg-one(margin-top, 16px)
+    span
+      color: $black
+    &_50
+      +lg
+        width: 50%

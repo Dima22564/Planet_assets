@@ -1,0 +1,26 @@
+// Blocks
+@import './blocks/_partner'
+@import './blocks/_pay-item'
+@import './blocks/_adv'
+
+.partners
+  padding: 72px 0
+  &__title
+    margin-bottom: 48px
+    +md-one(margin-bottom, 54px)
+  &__wrap
+    margin-bottom: 30px
+    +lg-one(margin-bottom, 14px)
+  &__advantages
+    margin-bottom: 30px
+    +xl-one(margin-bottom, 14px)
+  &__revenue
+    flex-direction: column
+    .revenue__title 
+      margin: 12px 0 0 0
+    .revenue__price
+      +sm
+        display: flex
+    .revenue__percent
+      +sm
+        align-self: end
