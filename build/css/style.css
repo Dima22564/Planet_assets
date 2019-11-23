@@ -16,7 +16,7 @@ body {
 }
 
 .dark-img {
-  display: none !important;
+  display: none;
 }
 
 h1 {
@@ -1961,6 +1961,13 @@ a:active {
   background-image: -o-linear-gradient(327deg, #ff00aa, #9c42f5 53%, #5d2de1);
   background-image: linear-gradient(123deg, #ff00aa, #9c42f5 53%, #5d2de1);
   border-radius: 40px;
+  position: relative;
+}
+
+.start-wrap .bg-elem {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .footer-top {
@@ -2178,6 +2185,8 @@ a:active {
 
 .dark-mode-on .header__bg-img.dark-img {
   mix-blend-mode: lighten;
+  right: 6px;
+  top: -86px;
 }
 
 .dark-mode-on .main-slide {
@@ -2368,6 +2377,142 @@ a:active {
 
 .dark-mode-on .about-item__circle span {
   background: #ffffff;
+}
+
+.dark-mode-on .faq-item {
+  -webkit-box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.24), 0 2px 4px -1px rgba(20, 16, 41, 0.24), 0 0 1px 0 rgba(20, 16, 41, 0.4);
+  box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.24), 0 2px 4px -1px rgba(20, 16, 41, 0.24), 0 0 1px 0 rgba(20, 16, 41, 0.4);
+  background-color: #24243b;
+}
+
+.dark-mode-on .faq-item__title {
+  color: #ffffff;
+}
+
+.dark-mode-on .faq-item__text {
+  color: rgba(224, 224, 255, 0.6);
+}
+
+.dark-mode-on .faq-item__icon {
+  color: rgba(224, 224, 255, 0.4);
+}
+
+.dark-mode-on .form {
+  -webkit-box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.24), 0 2px 4px -1px rgba(20, 16, 41, 0.24), 0 0 1px 0 rgba(20, 16, 41, 0.4);
+  box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.24), 0 2px 4px -1px rgba(20, 16, 41, 0.24), 0 0 1px 0 rgba(20, 16, 41, 0.4);
+  background-color: #24243b;
+}
+
+.dark-mode-on .form__title {
+  color: #ffffff;
+}
+
+.dark-mode-on .form__social {
+  color: #e0e0ff;
+}
+
+.dark-mode-on .checkbox span {
+  color: rgba(224, 224, 255, 0.6);
+}
+
+.dark-mode-on .input__input {
+  background: rgba(224, 224, 255, 0.02);
+  color: #ffffff;
+}
+
+.dark-mode-on .input__input::-webkit-input-placeholder {
+  color: rgba(224, 224, 255, 0.6);
+}
+
+.dark-mode-on .input__input::-moz-placeholder {
+  color: rgba(224, 224, 255, 0.6);
+}
+
+.dark-mode-on .input__input:-ms-input-placeholder {
+  color: rgba(224, 224, 255, 0.6);
+}
+
+.dark-mode-on .input__input::-ms-input-placeholder {
+  color: rgba(224, 224, 255, 0.6);
+}
+
+.dark-mode-on .input__input::placeholder {
+  color: rgba(224, 224, 255, 0.6);
+}
+
+.dark-mode-on .footer__logo {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.dark-mode-on .footer-top__lang {
+  background: rgba(224, 224, 255, 0.02);
+}
+
+.dark-mode-on .footer-top__social {
+  background: rgba(224, 224, 255, 0.02);
+  color: #e0e0ff;
+}
+
+.dark-mode-on .footer-links__link {
+  color: #ffffff;
+}
+
+.dark-mode-on .footer-bottom__item {
+  color: rgba(224, 224, 255, 0.6);
+}
+
+.dark-mode-on .footer-bottom__item span {
+  color: #ffffff;
+}
+
+.dark-mode-on .top-menu-mobile {
+  -webkit-box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.24), 0 0 1px 0 rgba(20, 16, 41, 0.4);
+  box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.24), 0 0 1px 0 rgba(20, 16, 41, 0.4);
+  background-color: #24243b;
+}
+
+.dark-mode-on .top-menu-mobile__logo {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.dark-mode-on .top-menu-mobile__burger {
+  color: #ffffff;
+}
+
+.dark-mode-on .top-menu-mobile .mobile-drop {
+  background: #24243b;
+}
+
+.dark-mode-on .top-menu-mobile .mobile-drop__link {
+  color: #ffffff;
+}
+
+.dark-mode-on .top-menu-mobile .mobile-drop__arrow {
+  color: rgba(224, 224, 255, 0.4);
+}
+
+.dark-mode-on .top-menu-mobile .mobile-drop__lang span {
+  color: #ffffff;
+}
+
+.dark-mode-on .dark-mode__label {
+  color: #ffffff;
+}
+
+.dark-mode-on .langs-drop {
+  -webkit-box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.24), 0 0 1px 0 rgba(20, 16, 41, 0.4);
+  box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.24), 0 0 1px 0 rgba(20, 16, 41, 0.4);
+  background-color: #24243b;
+}
+
+.dark-mode-on .langs-drop .fa {
+  color: rgba(224, 224, 255, 0.4);
+}
+
+.dark-mode-on .lang-drop__text {
+  color: #ffffff;
 }
 
 @media (max-width: 1200px) {
@@ -2649,6 +2794,13 @@ a:active {
     flex-wrap: wrap;
     padding-right: 43px;
   }
+
+  .dark-mode-on .header__bg-img.dark-img {
+    width: 113%;
+    bottom: 150px;
+    top: initial;
+    right: 12px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -2760,6 +2912,12 @@ a:active {
 
   .footer-top__social {
     margin: 12px 0;
+  }
+
+  .dark-mode-on .header__bg-img.dark-img {
+    width: initial;
+    right: -118px !important;
+    bottom: 91px !important;
   }
 }
 

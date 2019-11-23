@@ -33,6 +33,17 @@
   .header
     &__bg-img.dark-img
       mix-blend-mode: lighten
+      right: 6px
+      top: -86px
+      +md
+        width: 113%
+        bottom: 150px
+        top: initial
+        right: 12px
+      +sm
+        width: initial
+        right:-118px !important
+        bottom: 91px !important
   .main-slide
     box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.24), 0 2px 4px -1px rgba(20, 16, 41, 0.24), 0 0 1px 0 rgba(20, 16, 41, 0.4);
     background-color: #24243b
@@ -142,6 +153,79 @@
         background-image: linear-gradient(135deg, #33334b, #27273e 50%, #202036)
         span
           background: $white
+  .faq
+    &-item
+      box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.24), 0 2px 4px -1px rgba(20, 16, 41, 0.24), 0 0 1px 0 rgba(20, 16, 41, 0.4)
+      background-color: #24243b
+      &__title
+        color: $white
+      &__text
+        color: rgba(224, 224, 255, 0.6)
+      &__icon
+        color: rgba(224, 224, 255, 0.4)
+  .form
+    box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.24), 0 2px 4px -1px rgba(20, 16, 41, 0.24), 0 0 1px 0 rgba(20, 16, 41, 0.4);
+    background-color: #24243b
+    &__title
+      color: $white
+    &__social
+      color: #e0e0ff
+  .checkbox
+    span
+      color: rgba(224, 224, 255, 0.6)
+  .input
+    &__input
+      background: rgba(224, 224, 255, 0.02)
+      color: $white
+      &::placeholder
+        color: rgba(224, 224, 255, 0.6)
+  .footer
+    &__logo
+      filter: invert(100%)
+    &-top
+      &__lang
+        background: rgba(224, 224, 255, 0.02)
+      &__social
+        background: rgba(224, 224, 255, 0.02)
+        color: #e0e0ff
+    &-links
+      &__link
+        color: $white
+    &-bottom
+      &__item
+        color: rgba(224, 224, 255, 0.6)
+        span
+          color: $white
+  .top-menu-mobile
+    box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.24), 0 0 1px 0 rgba(20, 16, 41, 0.4)
+    background-color: #24243b
+    &__logo
+      filter: invert(100%)
+    &__burger
+      color: $white
+    .mobile-drop
+      background: #24243b
+      &__link
+        color: $white
+      &__arrow
+        color: rgba(224, 224, 255, 0.4)
+      &__lang
+        span
+          color: $white
+  .dark-mode
+    &__label
+      color: $white
+  .langs-drop
+    box-shadow: 0 2px 4px -1px rgba(20, 16, 41, 0.24), 0 0 1px 0 rgba(20, 16, 41, 0.4)
+    background-color: #24243b
+    .fa
+      color: rgba(224, 224, 255, 0.4)
+  .lang-drop
+    &__text
+      color: $white
+    
+
+    
 
 
 

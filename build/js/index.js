@@ -120,6 +120,15 @@ $(document).ready(function () {
   });
   $('.js-dark-mode').click(function (e) {
     $('.js-toggler-dark-mode').toggleClass('toggler_active');
+    $('body').toggleClass('dark-mode-on');
+
+    if ($('body').hasClass('dark-mode-on') == true) {
+      $('.light-img').hide();
+      $('.dark-img').show();
+    } else {
+      $('.light-img').show();
+      $('.dark-img').hide();
+    }
   });
   $('.js-to-langs').click(function (e) {
     $('.mobile-drop').hide(100, function (e) {
