@@ -9,7 +9,7 @@
         <link href="./css/style.min.css" rel="stylesheet">
         <title>Planet Assets</title>
     </head>
-    <body>
+    <body class="dark-mode-on">
         <section class="top-menu">
             <div class="container top-menu__container">
                 <div class="top-menu-wrapper"><a class="top-menu__logo" href><img src="./img/logo.png" alt></a>
@@ -68,7 +68,7 @@
             </div>
         </section>
         <header class="header">
-            <div class="container"><img class="header__bg-img" src="./img/bg-img-1.png" alt>
+            <div class="container"><img class="header__bg-img light-img" src="./img/bg-img-1.png" alt><img class="header__bg-img dark-img" src="./img/bg-img-1-d.png" alt>
                 <div class="row">
                     <div class="col-xl-6 col-lg-7 col-md-7">
                         <div class="main-title">
@@ -83,17 +83,6 @@
                         <div class="main-slider js-main-slider">
                             <div class="main-slide">
                                 <div class="main-slide__top">
-                                    <div class="main-slide__imgWrapper main-slide__imgWrapper-violet"><span class="icon-icon-2 main-slide__icon"></span></div>
-                                    <div class="main-slide__btns">
-                                        <button class="main-slide__btn js-main-prev-btn"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
-                                        <button class="main-slide__btn js-main-next-btn"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
-                                    </div>
-                                </div>
-                                <p class="main-slide__title">Total Daily Earnings </p>
-                                <p class="main-slide__text">A platform for automating the purchase of advertising</p>
-                            </div>
-                            <div class="main-slide">
-                                <div class="main-slide__top">
                                     <div class="main-slide__imgWrapper main-slide__imgWrapper-orange"><span class="icon-icon-1 main-slide__icon"></span></div>
                                     <div class="main-slide__btns">
                                         <button class="main-slide__btn js-main-prev-btn"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
@@ -101,6 +90,17 @@
                                     </div>
                                 </div>
                                 <p class="main-slide__title">Number of Users</p>
+                                <p class="main-slide__text">A platform for automating the purchase of advertising</p>
+                            </div>
+                            <div class="main-slide">
+                                <div class="main-slide__top">
+                                    <div class="main-slide__imgWrapper main-slide__imgWrapper-violet"><span class="icon-icon-2 main-slide__icon"></span></div>
+                                    <div class="main-slide__btns">
+                                        <button class="main-slide__btn js-main-prev-btn"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                                        <button class="main-slide__btn js-main-next-btn"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                                <p class="main-slide__title">Total Daily Earnings </p>
                                 <p class="main-slide__text">A platform for automating the purchase of advertising</p>
                             </div>
                             <div class="main-slide">
@@ -274,7 +274,17 @@
                         <div class="strategy-slider js-strategy-slider">
                             <div class="strategy-wrapper">
                                 <div class="strategy-slide">
-                                    <div class="strategy-slide__img"><span class="strategy-slide__number">1</span><img src="./img/strategy-1.png" alt></div>
+                                    <div class="strategy-slide__img"><span class="strategy-slide__number">1</span><img class="light-img" src="./img/slide-b-1.png" alt><img class="dark-img" src="./img/slide-b-1-d.png" alt></div>
+                                    <div class="strategy-slide__text">
+                                        <p class="strategy-slide__title">First Strategy</p>
+                                        <p class="strategy-slide__description">Suppose we have two candles and we are at the opening of the third candle. The trading robot looks at the low price of the penultimate candle, then looks at the price hi of the last candle, and if the price hi is above the low price, then a sell deal is opened. If another situation and the penultimate candle with the low price is greater than the last candle with the price hi, then a deal on bay opens.</p>
+                                        <p class="strategy-slide__description">If another situation and the penultimate candle with the low price is greater than the last candle with the price hi, then a deal on bay opens.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="strategy-wrapper">
+                                <div class="strategy-slide">
+                                    <div class="strategy-slide__img"><span class="strategy-slide__number">2</span><img class="light-img" src="./img/slide-b-2.png" alt><img class="dark-img" src="./img/slide-b-2-d.png" alt></div>
                                     <div class="strategy-slide__text">
                                         <p class="strategy-slide__title">Second Strategy</p>
                                         <p class="strategy-slide__description">What this indicator shows: it has two levels: 1-level 70 and 2-level 30 between these levels, a line is drawn which, when crossing the lower level, indicates that the price is greatly oversold and means that the price will soon rise. It follows that when the line crosses the lower level to the top, the bay transaction opens and when the price moves the upper level down, the sell transaction opens. A very popular strategy described in many technical analysis books.</p>
@@ -283,23 +293,16 @@
                             </div>
                             <div class="strategy-wrapper">
                                 <div class="strategy-slide">
-                                    <div class="strategy-slide__img"><span class="strategy-slide__number">1</span><img src="./img/strategy-1.png" alt></div>
+                                    <div class="strategy-slide__img"><span class="strategy-slide__number">3</span><img class="strategy-slide__image light-img" src="./img/slide-b-3.png" alt><img class="strategy-slide__image dark-img" src="./img/slide-b-3.png" alt></div>
                                     <div class="strategy-slide__text">
-                                        <p class="strategy-slide__title">Second Strategy</p>
-                                        <p class="strategy-slide__description">What this indicator shows: it has two levels: 1-level 70 and 2-level 30 between these levels, a line is drawn which, when crossing the lower level, indicates that the price is greatly oversold and means that the price will soon rise. It follows that when the line crosses the lower level to the top, the bay transaction opens and when the price moves the upper level down, the sell transaction opens. A very popular strategy described in many technical analysis books.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="strategy-wrapper">
-                                <div class="strategy-slide">
-                                    <div class="strategy-slide__img"><span class="strategy-slide__number">1</span><img src="./img/strategy-1.png" alt></div>
-                                    <div class="strategy-slide__text">
-                                        <p class="strategy-slide__title">Second Strategy</p>
-                                        <p class="strategy-slide__description">What this indicator shows: it has two levels: 1-level 70 and 2-level 30 between these levels, a line is drawn which, when crossing the lower level, indicates that the price is greatly oversold and means that the price will soon rise. It follows that when the line crosses the lower level to the top, the bay transaction opens and when the price moves the upper level down, the sell transaction opens. A very popular strategy described in many technical analysis books.</p>
+                                        <p class="strategy-slide__title">Third Strategy</p>
+                                        <p class="strategy-slide__description">In this strategy, the trading robot also looks at the last two candles; if the last candle has risen relative to the penultimate, the bay transaction is opened, and if the candle has fallen relative to the penultimate, the sell deal is opened. A trading robot takes the value of indicators and the value of candles from the timeframe on which it is launched, we have this H1.</p>
+                                        <p class="strategy-slide__description">A trading robot takes the value of indicators and the value of candles from the timeframe on which it is launched, we have this H1.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="strategy-slider-dots"></div>
                     </div>
                 </div>
             </div>
@@ -380,7 +383,7 @@
                     <div class="row justify-content-md-center">
                         <div class="col-xl-4 col-lg-4 col-md-6">
                             <div class="partner">
-                                <div class="partner__img"><img src="./img/partner-1.png" alt></div>
+                                <div class="partner__img"><img class="light-img" src="./img/partner-1.png" alt><img class="dark-img" src="./img/partner-1-d.png" alt></div>
                             </div>
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-6">
@@ -496,11 +499,11 @@
                         <div class="case-slider-wrap">
                             <button class="case-slider__btn js-case-slider-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
                             <div class="case-slider js-case-slider">
-                                <div class="case-slider__slide"><img src="./img/slide-1.png" alt></div>
-                                <div class="case-slider__slide"><img src="./img/slide-1.png" alt></div>
-                                <div class="case-slider__slide"><img src="./img/slide-1.png" alt></div>
-                                <div class="case-slider__slide"><img src="./img/slide-1.png" alt></div>
-                                <div class="case-slider__slide"><img src="./img/slide-1.png" alt></div>
+                                <div class="case-slider__slide"><img class="light-img" src="./img/slide-1.png" alt></div>
+                                <div class="case-slider__slide"><img class="light-img" src="./img/slide-1.png" alt></div>
+                                <div class="case-slider__slide"><img class="light-img" src="./img/slide-1.png" alt></div>
+                                <div class="case-slider__slide"><img class="light-img" src="./img/slide-1.png" alt></div>
+                                <div class="case-slider__slide"><img class="light-img" src="./img/slide-1.png" alt></div>
                             </div>
                             <button class="case-slider__btn case-slider__btn_right js-case-slider-next"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
                             <div class="case-slider__dots js-slider-dots"></div>
@@ -537,7 +540,7 @@
                             <div class="about-item__content">
                                 <div class="about-item__label">1</div>
                                 <p class="about-item__title">Start</p>
-                                <p class="abou-item__text">Leave a request for the purchase of a robot</p>
+                                <p class="about-item__text">Leave a request for the purchase of a robot</p>
                             </div>
                         </div>
                         <div class="about-item">
@@ -545,7 +548,7 @@
                             <div class="about-item__content">
                                 <div class="about-item__label">2</div>
                                 <p class="about-item__title">Purchase</p>
-                                <p class="abou-item__text">Make a purchase through the Chat bot in Telegram or manager</p>
+                                <p class="about-item__text">Make a purchase through the Chat bot in Telegram or manager</p>
                             </div>
                         </div>
                         <div class="about-item">
@@ -553,7 +556,7 @@
                             <div class="about-item__content">
                                 <div class="about-item__label">3</div>
                                 <p class="about-item__title">Register</p>
-                                <p class="abou-item__text">Register with a broker and open an account</p>
+                                <p class="about-item__text">Register with a broker and open an account</p>
                             </div>
                         </div>
                         <div class="about-item">
@@ -561,7 +564,7 @@
                             <div class="about-item__content">
                                 <div class="about-item__label">4</div>
                                 <p class="about-item__title">Set Up</p>
-                                <p class="abou-item__text">Our manager installs a robot for you</p>
+                                <p class="about-item__text">Our manager installs a robot for you</p>
                             </div>
                         </div>
                         <div class="about-item">
@@ -569,7 +572,7 @@
                             <div class="about-item__content">
                                 <div class="about-item__label">5</div>
                                 <p class="about-item__title">Deposit</p>
-                                <p class="abou-item__text">Replenish the deposit and the robot begins to trade</p>
+                                <p class="about-item__text">Replenish the deposit and the robot begins to trade</p>
                             </div>
                         </div>
                         <div class="about-item">

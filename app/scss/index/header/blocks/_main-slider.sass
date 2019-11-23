@@ -1,6 +1,33 @@
 .slick-list
   padding: 5px 0
   margin: -5px 0
+.slider-dots
+  margin-top: 24px
+  button
+    font-size: 0
+    line-height: 0
+    display: none
+  li
+    width: 8px
+    height: 8px
+    border-radius: 50%
+    background: rgba(20, 16, 41, 0.06)
+    cursor: pointer
+    &:not(:last-child)
+      margin-right: 8px
+    &:first-child
+      &.slick-active
+        background: #f55c45
+    &:nth-child(2)
+      &.slick-active
+        background: $violet
+    &:nth-child(3)
+      &.slick-active
+        background: #ff00aa
+  .slick-dots
+    display: flex
+    align-items: center
+    justify-content: center
 .main-slide
   +shadow
   border-radius: 12px

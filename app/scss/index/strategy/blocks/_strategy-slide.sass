@@ -1,3 +1,23 @@
+.strategy-slider-dots
+  margin-top: 32px
+  .slick-dots
+    display: flex
+    align-items: center
+    justify-content: center
+  button
+    font-size: 0
+    line-height: 0
+    display: none
+  li
+    width: 40px
+    height: 8px
+    border-radius: 4px
+    background: rgba(20, 16, 41, 0.06)
+    cursor: pointer
+    &:not(:last-child)
+      margin-right: 24px
+  .slick-active
+    background-image: linear-gradient(101deg, #ff00aa, #9c42f5 53%, #5d2de1)
 .strategy-slide
   display: flex
   border-radius: 12px
@@ -40,3 +60,7 @@
   &__description
     font-size: 16px
     line-height: 28px
+    &:not(:last-child)
+      margin-bottom: 20px
+  &__image
+    margin: auto

@@ -3,6 +3,8 @@ $(document).ready(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
+    dots: true,
+    appendDots: $('.slider-dots'),
     prevArrow: $('.js-main-prev-btn'),
     nextArrow: $('.js-main-next-btn'),
     // variableWidth: true
@@ -45,6 +47,8 @@ $(document).ready(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    dots: true,
+    appendDots: $('.strategy-slider-dots')
     // variableWidth: true
   })
 
