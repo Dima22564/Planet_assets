@@ -171,5 +171,30 @@ $(document).ready(function () {
     $(this).toggleClass('fa-times').toggleClass('fa-bars')
   })
 
-  
+  // $('.dark-img').hide()
+  if($('body').hasClass('dark-mode-on')){
+    $('.light-img').hide()
+  }
+  else{
+    $('.dark-img').hide()
+  }
+
+  $('.js-link').click(function(e){
+    e.preventDefault()
+    var attr = $(this).attr('data-link')
+    var offset = $(`#${attr}`).offset().top
+    $('html').animate({
+      'scrollTop': offset
+    })
+  })
+
+  $('.js-play').click(function(e){
+    $(this).css({
+      'opacity': 0,
+      'z-index': -5
+    })
+    $(this).parent().find('iframe').show()
+    // $(this).hide(10, function(){
+    // })
+  })
 });
