@@ -4,7 +4,14 @@
 
 .case
   padding: 72px 0
+  +sm
+    overflow: hidden
+    padding: 72px 0 140px
   &__title
     margin-bottom: 48px
   &__flawless
     +lg-one(margin-bottom, 48px)
+  .asNavFor
+    .slick-list
+      padding: 30px
+      margin: -30px

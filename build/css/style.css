@@ -425,7 +425,7 @@ a:active {
   -webkit-box-shadow: 0 16px 16px -4px #1410290f, 0 4px 8px -1px #1410290f, 0 0 1px 0 #1410291e;
   box-shadow: 0 16px 16px -4px #1410290f, 0 4px 8px -1px #1410290f, 0 0 1px 0 #1410291e;
   background: #ffffff;
-  border-radius: 4px;
+  border-radius: 12px;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -473,7 +473,10 @@ a:active {
   justify-content: space-between;
   z-index: 555;
   margin-bottom: 36px;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .top-menu-mobile .content {
@@ -1258,6 +1261,11 @@ a:active {
   margin-left: 0;
 }
 
+.feedback .js-flawless-slider .slick-list {
+  padding: 20px;
+  margin: -20px;
+}
+
 .strategy-slider-dots {
   margin-top: 32px;
 }
@@ -1324,7 +1332,6 @@ a:active {
 
 .strategy-slide__img img {
   width: 100%;
-  padding: 24px;
 }
 
 .strategy-slide__number {
@@ -1626,6 +1633,8 @@ a:active {
   -ms-flex-pack: center;
   justify-content: center;
   margin-top: -145px;
+  position: relative;
+  z-index: 10;
 }
 
 .case-slider__dots .slick-dots {
@@ -1665,6 +1674,11 @@ a:active {
 
 .case__title {
   margin-bottom: 48px;
+}
+
+.case .asNavFor .slick-list {
+  padding: 30px;
+  margin: -30px;
 }
 
 .about-item {
@@ -1767,8 +1781,9 @@ a:active {
 }
 
 .about {
-  padding: 72px 0;
+  padding: 72px 0 0;
   overflow: hidden;
+  margin-top: -70px;
 }
 
 .about__title {
@@ -1787,6 +1802,10 @@ a:active {
   position: absolute;
   left: 0;
   top: 12px;
+}
+
+.about-items-wrap .slick-list {
+  padding-bottom: 20px;
 }
 
 .about-slider {
@@ -1808,13 +1827,17 @@ a:active {
   margin-bottom: 16px;
 }
 
+.faq-item_hide {
+  display: none;
+}
+
 .faq-item__top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1825,8 +1848,15 @@ a:active {
 }
 
 .faq-item__icon {
-  font-size: 50px;
-  color: rgba(20, 16, 41, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .faq-item__text {
@@ -1978,6 +2008,7 @@ a:active {
 
 .start {
   padding: 72px 0;
+  position: relative;
 }
 
 .start-wrap {
@@ -2416,7 +2447,8 @@ a:active {
 }
 
 .dark-mode-on .faq-item__icon {
-  color: rgba(224, 224, 255, 0.4);
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
 }
 
 .dark-mode-on .form {
@@ -2640,7 +2672,7 @@ a:active {
   }
 
   .about-items-wrap .slick-list {
-    padding: 10px;
+    padding: 10px 10px 20px 10px;
     margin: -10px;
   }
 
@@ -2781,10 +2813,6 @@ a:active {
     margin-bottom: 54px;
   }
 
-  .faq-item__text {
-    padding-right: 40px;
-  }
-
   .faq__btn {
     margin-top: 48px;
   }
@@ -2804,6 +2832,7 @@ a:active {
   .start-wrap {
     background: none;
     padding: 30px;
+    position: initial;
   }
 
   .footer-top__socials {
@@ -2882,6 +2911,11 @@ a:active {
     max-width: 255px;
   }
 
+  .feedback .js-flawless-slider .slick-list {
+    padding: 5px;
+    margin: -5px;
+  }
+
   .detail-item {
     max-width: 255px;
     margin: 0 8px;
@@ -2900,6 +2934,11 @@ a:active {
   .partners__revenue .revenue__percent {
     -ms-flex-item-align: end;
     align-self: end;
+  }
+
+  .case {
+    overflow: hidden;
+    padding: 72px 0 140px;
   }
 
   .form__bottom {
