@@ -2182,6 +2182,35 @@ a:active {
   margin-bottom: 56px;
 }
 
+.cookies {
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.cookies__content {
+  background: #ffffff;
+  -webkit-box-shadow: 0 16px 16px -4px rgba(20, 16, 41, 0.06), 0 4px 8px -1px rgba(20, 16, 41, 0.06), 0 0 1px 0 rgba(20, 16, 41, 0.12);
+  box-shadow: 0 16px 16px -4px rgba(20, 16, 41, 0.06), 0 4px 8px -1px rgba(20, 16, 41, 0.06), 0 0 1px 0 rgba(20, 16, 41, 0.12);
+  border-radius: 12px;
+  padding: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.cookies__text span {
+  color: #9c42f5;
+}
+
 .dark-mode-on {
   background: #202036;
 }
@@ -2580,6 +2609,16 @@ a:active {
   color: #ffffff;
 }
 
+.dark-mode-on .cookies__content {
+  -webkit-box-shadow: 0 16px 16px -4px rgba(20, 16, 41, 0.24), 0 4px 8px -1px rgba(20, 16, 41, 0.24), 0 0 1px 0 rgba(20, 16, 41, 0.4);
+  box-shadow: 0 16px 16px -4px rgba(20, 16, 41, 0.24), 0 4px 8px -1px rgba(20, 16, 41, 0.24), 0 0 1px 0 rgba(20, 16, 41, 0.4);
+  background-color: #24243b;
+}
+
+.dark-mode-on .cookies__text {
+  color: rgba(224, 224, 255, 0.6);
+}
+
 @media (max-width: 1200px) {
   .top-menu__container {
     max-width: calc( 100%);
@@ -2745,6 +2784,10 @@ a:active {
 
   .footer-bottom__item_50 {
     width: 50%;
+  }
+
+  .cookies .container {
+    max-width: 100%;
   }
 }
 
@@ -2976,5 +3019,27 @@ a:active {
 
   .footer-top__social {
     margin: 12px 0;
+  }
+
+  .cookies {
+    -webkit-transform: translateY(-45%);
+    -ms-transform: translateY(-45%);
+    transform: translateY(-45%);
+  }
+
+  .cookies__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .cookies__btn {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    margin-top: 24px;
   }
 }

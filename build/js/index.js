@@ -195,4 +195,7 @@ $(document).ready(function () {
     arrows: false,
     fade: true
   });
+  $('.js-accept-cookies').click(function (e) {
+    $('.cookies').fadeOut();
+  });
 });
