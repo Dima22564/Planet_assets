@@ -59,6 +59,7 @@ span,
 div,
 a {
   outline: none !important;
+  font-family: 'Montserrat', sans-serif;
 }
 
 button:hover,
@@ -2236,6 +2237,16 @@ a:active {
 
 .dark-mode-on .top-menu .langs__text {
   color: #ffffff;
+}
+
+.dark-mode-on .top-menu .langs__list {
+  -webkit-box-shadow: 0 16px 16px -4px rgba(32, 32, 54, 0.06), 0 4px 8px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12);
+  box-shadow: 0 16px 16px -4px rgba(32, 32, 54, 0.06), 0 4px 8px -1px rgba(32, 32, 54, 0.06), 0 0 1px 0 rgba(32, 32, 54, 0.12);
+  background-color: #24243b;
+}
+
+.dark-mode-on .top-menu .langs__item {
+  background-color: #24243b;
 }
 
 .dark-mode-on .header {
